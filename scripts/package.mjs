@@ -83,6 +83,7 @@ if (values.verify) {
     for (const [language, title] of [['en', 'Preferences'], ['zh-TW', '偏好設定'], ['zh-CN', '偏好设置']]) {
       await page.locator('[name="general.language"]').selectOption(language);
       await page.waitForFunction(({ language, title }) => document.documentElement.lang === language && document.getElementById('preferences-title').textContent === title, { language, title });
+      await page.waitForFunction(async language => (await window.desktop.getPreferences()).general.language === language, language);
       if (platform === 'darwin') {
         const labels = await app.evaluate(({ Menu }) => Menu.getApplicationMenu().items[0].submenu.items.map(item => item.label));
         assert.ok(labels.includes(title));
