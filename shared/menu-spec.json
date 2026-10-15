@@ -1,0 +1,1137 @@
+[
+  {
+    "label": "文件",
+    "items": [
+      {
+        "id": "new",
+        "label": "新建",
+        "shortcut": "Ctrl+N"
+      },
+      {
+        "id": "open",
+        "label": "打开…",
+        "shortcut": "Ctrl+O"
+      },
+      {
+        "id": "open-folder",
+        "label": "打开文件夹…"
+      },
+      {
+        "id": "recent-documents",
+        "label": "打开最近文件",
+        "items": [
+          {
+            "id": "recent-placeholder",
+            "label": "空",
+            "enabled": false,
+            "reason": "最近文件由实际打开记录动态生成"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "reopen-closed",
+            "label": "重新打开关闭的文件",
+            "shortcut": "Ctrl+Shift+T"
+          },
+          {
+            "id": "clear-recent",
+            "label": "清除最近文件"
+          }
+        ]
+      },
+      {
+        "id": "quick-open",
+        "label": "快速打开…",
+        "shortcut": "Ctrl+P"
+      },
+      {
+        "label": "选择编码重新打开",
+        "items": [
+          {
+            "id": "encoding-auto",
+            "label": "自动"
+          },
+          {
+            "id": "encoding-utf8",
+            "label": "UTF-8"
+          },
+          {
+            "id": "encoding-utf16le",
+            "label": "UTF-16 LE"
+          },
+          {
+            "id": "encoding-utf16be",
+            "label": "UTF-16 BE"
+          },
+          {
+            "id": "encoding-windows1252",
+            "label": "Western (windows-1252)"
+          },
+          {
+            "id": "encoding-windows1251",
+            "label": "Cyrillic (windows-1251)"
+          },
+          {
+            "id": "encoding-iso8859-2",
+            "label": "Central European (ISO-8859-2)"
+          },
+          {
+            "id": "encoding-ibm866",
+            "label": "Cyrillic (IBM866)"
+          },
+          {
+            "id": "encoding-ibm855",
+            "label": "Cyrillic (IBM855)"
+          },
+          {
+            "id": "encoding-koi8-r",
+            "label": "Cyrillic (KOI8-R)"
+          },
+          {
+            "id": "encoding-maccyrillic",
+            "label": "Cyrillic (MacCyrillic)"
+          },
+          {
+            "id": "encoding-windows1250",
+            "label": "Central European (windows-1250)"
+          },
+          {
+            "id": "encoding-windows1253",
+            "label": "Greek (windows-1253)"
+          },
+          {
+            "id": "encoding-iso8859-7",
+            "label": "Greek (ISO-8859-7)"
+          },
+          {
+            "id": "encoding-windows1255",
+            "label": "Hebrew (windows-1255)"
+          },
+          {
+            "id": "encoding-iso8859-8",
+            "label": "Hebrew (ISO-8859-8)"
+          },
+          {
+            "id": "encoding-gb2312",
+            "label": "Chinese Simplified (GB2312)"
+          },
+          {
+            "id": "encoding-gbk",
+            "label": "Chinese Simplified (GBK)"
+          },
+          {
+            "id": "encoding-gb18030",
+            "label": "Chinese Simplified (GB18030)"
+          },
+          {
+            "id": "encoding-big5",
+            "label": "Chinese Traditional (Big5)"
+          },
+          {
+            "id": "encoding-shift_jis",
+            "label": "Japanese (SHIFT_JIS)"
+          },
+          {
+            "id": "encoding-euc-jp",
+            "label": "Japanese (EUC-JP)"
+          },
+          {
+            "id": "encoding-euc-kr",
+            "label": "Korean (EUC-KR)"
+          },
+          {
+            "id": "encoding-tis-620",
+            "label": "Thai (TIS-620)"
+          }
+        ]
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "save",
+        "label": "保存",
+        "shortcut": "Ctrl+S"
+      },
+      {
+        "id": "save-as",
+        "label": "另存为…",
+        "shortcut": "Ctrl+Shift+S"
+      },
+      {
+        "id": "save-all",
+        "label": "保存全部打开的文件"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "duplicate-file",
+        "label": "创建副本…"
+      },
+      {
+        "id": "rename-file",
+        "label": "重命名…"
+      },
+      {
+        "id": "reveal-file",
+        "label": "打开文件位置"
+      },
+      {
+        "id": "show-in-sidebar",
+        "label": "在侧边栏中显示"
+      },
+      {
+        "id": "file-properties",
+        "label": "属性"
+      },
+      {
+        "id": "delete-file",
+        "label": "删除…"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "import-doc",
+        "label": "导入…"
+      },
+      {
+        "label": "导出",
+        "items": [
+          {
+            "id": "export-html",
+            "label": "HTML…"
+          },
+          {
+            "id": "export-pdf",
+            "label": "PDF…"
+          },
+          {
+            "id": "export-docx",
+            "label": "Word / Pandoc…"
+          }
+        ]
+      },
+      {
+        "id": "print",
+        "label": "打印…",
+        "shortcut": "Alt+Shift+P"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "preferences",
+        "label": "偏好设置…",
+        "shortcut": "Ctrl+,"
+      },
+      {
+        "id": "close",
+        "label": "关闭",
+        "shortcut": "Ctrl+W"
+      }
+    ]
+  },
+  {
+    "label": "编辑",
+    "items": [
+      {
+        "id": "cut",
+        "label": "剪切",
+        "shortcut": "Ctrl+X"
+      },
+      {
+        "id": "copy",
+        "label": "复制",
+        "shortcut": "Ctrl+C"
+      },
+      {
+        "id": "paste",
+        "label": "粘贴",
+        "shortcut": "Ctrl+V"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "undo",
+        "label": "撤消",
+        "shortcut": "Ctrl+Z"
+      },
+      {
+        "id": "redo",
+        "label": "重做",
+        "shortcut": "Ctrl+Y"
+      },
+      {
+        "id": "copy-image-content",
+        "label": "拷贝图片",
+        "context": "image"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "copy-plain",
+        "label": "复制为纯文本"
+      },
+      {
+        "id": "copy-markdown",
+        "label": "复制为 Markdown",
+        "shortcut": "Ctrl+Shift+C"
+      },
+      {
+        "id": "copy-html",
+        "label": "复制为 HTML 代码"
+      },
+      {
+        "id": "copy-simplified",
+        "label": "复制内容并简化格式"
+      },
+      {
+        "id": "paste-plain",
+        "label": "粘贴为纯文本",
+        "shortcut": "Ctrl+Shift+V"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "select-all",
+        "label": "全选",
+        "shortcut": "Ctrl+A"
+      },
+      {
+        "id": "select-block",
+        "label": "选择段落或块",
+        "shortcut": "Ctrl+Alt+P"
+      },
+      {
+        "id": "select-line",
+        "label": "选中当前行或句",
+        "shortcut": "Ctrl+L"
+      },
+      {
+        "id": "select-format",
+        "label": "选中当前格式文本",
+        "shortcut": "Ctrl+E"
+      },
+      {
+        "id": "select-word",
+        "label": "选中当前词",
+        "shortcut": "Ctrl+D"
+      },
+      {
+        "label": "跳转到",
+        "items": [
+          {
+            "id": "jump-top",
+            "label": "文首"
+          },
+          {
+            "id": "jump-selection",
+            "label": "所选内容",
+            "shortcut": "Ctrl+J"
+          },
+          {
+            "id": "jump-bottom",
+            "label": "文末"
+          },
+          {
+            "id": "jump-line-start",
+            "label": "行首"
+          },
+          {
+            "id": "jump-line-end",
+            "label": "行尾"
+          }
+        ]
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "delete-selection",
+        "label": "删除所选范围"
+      },
+      {
+        "label": "删除范围",
+        "items": [
+          {
+            "id": "delete-block",
+            "label": "删除块",
+            "shortcut": "Ctrl+Alt+Shift+P"
+          },
+          {
+            "id": "delete-line",
+            "label": "删除当前行或句",
+            "shortcut": "Ctrl+Alt+Shift+L"
+          },
+          {
+            "id": "delete-format",
+            "label": "删除当前格式文本",
+            "shortcut": "Ctrl+Alt+Shift+E"
+          },
+          {
+            "id": "delete-word",
+            "label": "删除当前词",
+            "shortcut": "Ctrl+Shift+D"
+          }
+        ]
+      },
+      {
+        "label": "数学工具",
+        "items": [
+          {
+            "id": "math-refresh",
+            "label": "刷新所有数学公式"
+          }
+        ]
+      },
+      {
+        "label": "智能标点",
+        "items": [
+          {
+            "id": "punctuation-input",
+            "label": "输入时转换"
+          },
+          {
+            "id": "punctuation-rendering",
+            "label": "渲染时转换"
+          },
+          {
+            "id": "smart-quotes",
+            "label": "智能引号"
+          },
+          {
+            "id": "smart-dashes",
+            "label": "智能破折号"
+          },
+          {
+            "id": "unicode-punctuation",
+            "label": "解析 Markdown 时允许并转化 Unicode 标点"
+          }
+        ]
+      },
+      {
+        "label": "换行符",
+        "items": [
+          {
+            "id": "eol-crlf",
+            "label": "Windows 换行符 (CRLF)"
+          },
+          {
+            "id": "eol-lf",
+            "label": "Unix 换行符 (LF)"
+          },
+          {
+            "id": "ensure-final-newline",
+            "label": "保存时在文末添加空行"
+          }
+        ]
+      },
+      {
+        "label": "空格与换行",
+        "items": [
+          {
+            "id": "indent-first-line",
+            "label": "首行缩进"
+          },
+          {
+            "id": "visible-br",
+            "label": "显示 <br/>"
+          },
+          {
+            "id": "preserve-line-break",
+            "label": "保留单换行符"
+          }
+        ]
+      },
+      {
+        "id": "spell-check",
+        "label": "拼写检查"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "find",
+        "label": "查找和替换",
+        "shortcut": "Ctrl+F"
+      },
+      {
+        "id": "find-next",
+        "label": "查找下一个",
+        "shortcut": "F3"
+      },
+      {
+        "id": "find-previous",
+        "label": "查找上一个",
+        "shortcut": "Shift+F3"
+      },
+      {
+        "id": "replace",
+        "label": "替换",
+        "shortcut": "Ctrl+H"
+      }
+    ]
+  },
+  {
+    "label": "段落",
+    "items": [
+      {
+        "id": "heading-1",
+        "label": "一级标题",
+        "shortcut": "Ctrl+1"
+      },
+      {
+        "id": "heading-2",
+        "label": "二级标题",
+        "shortcut": "Ctrl+2"
+      },
+      {
+        "id": "heading-3",
+        "label": "三级标题",
+        "shortcut": "Ctrl+3"
+      },
+      {
+        "id": "heading-4",
+        "label": "四级标题",
+        "shortcut": "Ctrl+4"
+      },
+      {
+        "id": "heading-5",
+        "label": "五级标题",
+        "shortcut": "Ctrl+5"
+      },
+      {
+        "id": "heading-6",
+        "label": "六级标题",
+        "shortcut": "Ctrl+6"
+      },
+      {
+        "id": "paragraph",
+        "label": "段落",
+        "shortcut": "Ctrl+0"
+      },
+      {
+        "id": "increase-heading",
+        "label": "提升标题级别"
+      },
+      {
+        "id": "decrease-heading",
+        "label": "降低标题级别"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "label": "表格",
+        "items": [
+          {
+            "id": "table",
+            "label": "插入表格…",
+            "shortcut": "Ctrl+T"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "insert-row-above",
+            "label": "上方插入行"
+          },
+          {
+            "id": "insert-row-below",
+            "label": "下方插入行",
+            "shortcut": "Ctrl+Enter"
+          },
+          {
+            "id": "insert-column-left",
+            "label": "左侧插入列"
+          },
+          {
+            "id": "insert-column-right",
+            "label": "右侧插入列"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "move-row-up",
+            "label": "上移该行",
+            "shortcut": "Alt+ArrowUp"
+          },
+          {
+            "id": "move-row-down",
+            "label": "下移该行",
+            "shortcut": "Alt+ArrowDown"
+          },
+          {
+            "id": "move-column-left",
+            "label": "左移该列",
+            "shortcut": "Alt+ArrowLeft"
+          },
+          {
+            "id": "move-column-right",
+            "label": "右移该列",
+            "shortcut": "Alt+ArrowRight"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "delete-row",
+            "label": "删除行",
+            "shortcut": "Ctrl+Shift+Backspace"
+          },
+          {
+            "id": "delete-column",
+            "label": "删除列"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "copy-table",
+            "label": "复制表格"
+          },
+          {
+            "id": "format-table",
+            "label": "格式化表格源码"
+          },
+          {
+            "id": "delete-table",
+            "label": "删除表格"
+          }
+        ]
+      },
+      {
+        "id": "math-block",
+        "label": "公式块",
+        "shortcut": "Ctrl+Shift+M"
+      },
+      {
+        "id": "code-block",
+        "label": "代码块",
+        "shortcut": "Ctrl+Shift+K"
+      },
+      {
+        "label": "代码工具",
+        "items": [
+          {
+            "id": "copy-code",
+            "label": "复制代码块内容"
+          },
+          {
+            "id": "code-format-selection",
+            "label": "为选中内容调整缩进"
+          },
+          {
+            "id": "code-format-block",
+            "label": "为整个代码块调整缩进"
+          }
+        ]
+      },
+      {
+        "label": "警告框",
+        "items": [
+          {
+            "id": "alert-note",
+            "label": "提醒内容"
+          },
+          {
+            "id": "alert-tip",
+            "label": "建议内容"
+          },
+          {
+            "id": "alert-important",
+            "label": "重要内容"
+          },
+          {
+            "id": "alert-warning",
+            "label": "警告内容"
+          },
+          {
+            "id": "alert-caution",
+            "label": "注意内容"
+          }
+        ]
+      },
+      {
+        "id": "quote",
+        "label": "引用",
+        "shortcut": "Ctrl+Shift+Q"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "ordered-list",
+        "label": "有序列表",
+        "shortcut": "Ctrl+Shift+["
+      },
+      {
+        "id": "bullet-list",
+        "label": "无序列表",
+        "shortcut": "Ctrl+Shift+]"
+      },
+      {
+        "id": "task-list",
+        "label": "任务列表",
+        "shortcut": "Ctrl+Shift+X"
+      },
+      {
+        "label": "任务状态",
+        "items": [
+          {
+            "id": "task-toggle",
+            "label": "切换任务状态"
+          },
+          {
+            "id": "task-complete",
+            "label": "标记为已完成"
+          },
+          {
+            "id": "task-incomplete",
+            "label": "标记为未完成"
+          }
+        ]
+      },
+      {
+        "label": "列表缩进",
+        "items": [
+          {
+            "id": "indent",
+            "label": "增加缩进",
+            "shortcut": "Ctrl+]"
+          },
+          {
+            "id": "outdent",
+            "label": "减少缩进",
+            "shortcut": "Ctrl+["
+          }
+        ]
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "insert-paragraph-before",
+        "label": "在上方插入段落"
+      },
+      {
+        "id": "insert-paragraph-after",
+        "label": "在下方插入段落"
+      },
+      {
+        "id": "reference-link",
+        "label": "链接引用"
+      },
+      {
+        "id": "footnote",
+        "label": "脚注"
+      },
+      {
+        "id": "horizontal-rule",
+        "label": "水平分割线"
+      },
+      {
+        "id": "toc",
+        "label": "内容目录"
+      },
+      {
+        "id": "front-matter",
+        "label": "YAML Front Matter"
+      }
+    ]
+  },
+  {
+    "label": "格式",
+    "items": [
+      {
+        "id": "bold",
+        "label": "加粗",
+        "shortcut": "Ctrl+B"
+      },
+      {
+        "id": "italic",
+        "label": "斜体",
+        "shortcut": "Ctrl+I"
+      },
+      {
+        "id": "underline",
+        "label": "下划线",
+        "shortcut": "Ctrl+U"
+      },
+      {
+        "id": "inline-code",
+        "label": "代码",
+        "shortcut": "Ctrl+Shift+`"
+      },
+      {
+        "id": "inline-math",
+        "label": "内联公式"
+      },
+      {
+        "id": "strike",
+        "label": "删除线",
+        "shortcut": "Alt+Shift+5"
+      },
+      {
+        "id": "highlight",
+        "label": "高亮"
+      },
+      {
+        "id": "sup",
+        "label": "上标"
+      },
+      {
+        "id": "sub",
+        "label": "下标"
+      },
+      {
+        "id": "comment",
+        "label": "注释"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "link",
+        "label": "超链接…",
+        "shortcut": "Ctrl+K"
+      },
+      {
+        "label": "链接操作",
+        "items": [
+          {
+            "id": "open-link",
+            "label": "打开链接"
+          },
+          {
+            "id": "copy-link-address",
+            "label": "复制链接地址"
+          }
+        ]
+      },
+      {
+        "label": "图像",
+        "items": [
+          {
+            "id": "image",
+            "label": "插入图片…",
+            "shortcut": "Ctrl+Shift+I"
+          },
+          {
+            "id": "insert-local-image",
+            "label": "插入本地图片…"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "reveal-image",
+            "label": "打开图片位置…"
+          },
+          {
+            "id": "copy-image-content",
+            "label": "拷贝图片"
+          },
+          {
+            "label": "缩放图片",
+            "items": [
+              {
+                "id": "image-scale-25",
+                "label": "25%"
+              },
+              {
+                "id": "image-scale-33",
+                "label": "33%"
+              },
+              {
+                "id": "image-scale-50",
+                "label": "50%"
+              },
+              {
+                "id": "image-scale-67",
+                "label": "67%"
+              },
+              {
+                "id": "image-scale-80",
+                "label": "80%"
+              },
+              {
+                "id": "image-scale-100",
+                "label": "100%"
+              },
+              {
+                "id": "image-scale-150",
+                "label": "150%"
+              },
+              {
+                "id": "image-scale-200",
+                "label": "200%"
+              }
+            ]
+          },
+          {
+            "label": "转换图片语法",
+            "items": [
+              {
+                "id": "image-syntax-markdown",
+                "label": "Markdown 格式"
+              },
+              {
+                "id": "image-syntax-html",
+                "label": "HTML 格式"
+              }
+            ]
+          },
+          {
+            "id": "delete-image-file",
+            "label": "删除图片文件"
+          },
+          {
+            "id": "copy-image-to",
+            "label": "复制图片到…"
+          },
+          {
+            "id": "move-image-to",
+            "label": "重命名 / 移动图片到…"
+          },
+          {
+            "id": "upload-image",
+            "label": "上传图片"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "copy-all-images",
+            "label": "复制所有图片到…"
+          },
+          {
+            "id": "move-all-images",
+            "label": "移动所有图片到…"
+          },
+          {
+            "id": "upload-images",
+            "label": "上传所有本地图片"
+          },
+          {
+            "id": "reload-images",
+            "label": "重新加载所有图片"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "id": "insert-image-policy",
+            "label": "当插入本地图片时",
+            "items": [
+              {
+                "id": "insert-image-policy-copy",
+                "label": "复制图片到文件夹…"
+              },
+              {
+                "id": "insert-image-policy-upload",
+                "label": "上传图片"
+              }
+            ]
+          },
+          {
+            "id": "image-root",
+            "label": "设置图片根目录"
+          },
+          {
+            "id": "upload-image-settings",
+            "label": "全局图像设置…"
+          }
+        ]
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "clear-format",
+        "label": "清除样式",
+        "shortcut": "Ctrl+\\"
+      }
+    ]
+  },
+  {
+    "label": "视图",
+    "items": [
+      {
+        "id": "sidebar",
+        "label": "显示／隐藏侧边栏",
+        "shortcut": "Ctrl+Shift+L"
+      },
+      {
+        "id": "outline",
+        "label": "大纲",
+        "shortcut": "Ctrl+Shift+1"
+      },
+      {
+        "id": "files-list",
+        "label": "文档列表",
+        "shortcut": "Ctrl+Shift+2"
+      },
+      {
+        "id": "files-tree",
+        "label": "文件树",
+        "shortcut": "Ctrl+Shift+3"
+      },
+      {
+        "id": "search",
+        "label": "搜索",
+        "shortcut": "Ctrl+Shift+F"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "source",
+        "label": "源代码模式",
+        "shortcut": "Ctrl+/"
+      },
+      {
+        "id": "focus",
+        "label": "专注模式",
+        "shortcut": "F8"
+      },
+      {
+        "id": "typewriter",
+        "label": "打字机模式",
+        "shortcut": "F9"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "statusbar",
+        "label": "显示状态栏"
+      },
+      {
+        "id": "word-count",
+        "label": "字数统计窗口"
+      },
+      {
+        "id": "fullscreen",
+        "label": "切换全屏",
+        "shortcut": "F11"
+      },
+      {
+        "id": "always-on-top",
+        "label": "保持窗口在最前端"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "zoom-reset",
+        "label": "实际大小",
+        "shortcut": "Ctrl+Shift+0"
+      },
+      {
+        "id": "zoom-in",
+        "label": "放大",
+        "shortcut": "Ctrl+Shift+="
+      },
+      {
+        "id": "zoom-out",
+        "label": "缩小",
+        "shortcut": "Ctrl+Shift+-"
+      },
+      {
+        "id": "devtools",
+        "label": "开发者工具"
+      }
+    ]
+  },
+  {
+    "label": "主题",
+    "items": [
+      {
+        "id": "theme-light",
+        "label": "Github",
+        "theme": "github.css"
+      },
+      {
+        "id": "theme-newsprint",
+        "label": "Newsprint",
+        "theme": "newsprint.css"
+      },
+      {
+        "id": "theme-dark",
+        "label": "Night",
+        "theme": "night.css"
+      },
+      {
+        "id": "theme-pixyll",
+        "label": "Pixyll",
+        "theme": "pixyll.css"
+      },
+      {
+        "id": "theme-whitey",
+        "label": "Whitey",
+        "theme": "whitey.css"
+      },
+      {
+        "id": "theme-lapis",
+        "label": "Lapis",
+        "theme": "lapis.css"
+      },
+      {
+        "id": "theme-vue",
+        "label": "Vue",
+        "theme": "vue.css"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "theme-folder",
+        "label": "打开主题文件夹"
+      },
+      {
+        "id": "theme-reload",
+        "label": "重新加载主题"
+      }
+    ]
+  },
+  {
+    "label": "帮助",
+    "items": [
+      {
+        "id": "help",
+        "label": "墨简使用指南"
+      },
+      {
+        "id": "markdown-reference",
+        "label": "Markdown 语法参考"
+      },
+      {
+        "id": "keyboard-shortcuts",
+        "label": "键盘快捷键"
+      },
+      {
+        "id": "changelog",
+        "label": "墨简更新记录"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "id": "dependency-licenses",
+        "label": "开源组件许可证"
+      },
+      {
+        "id": "about",
+        "label": "关于墨简"
+      }
+    ]
+  }
+]

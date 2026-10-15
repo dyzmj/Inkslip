@@ -1,0 +1,2610 @@
+{
+  "HTML 格式": {
+    "en": "HTML syntax",
+    "zh-TW": "HTML 格式"
+  },
+  "Markdown 格式": {
+    "en": "Markdown syntax",
+    "zh-TW": "Markdown 格式"
+  },
+  "PicGo 路径": {
+    "en": "PicGo executable",
+    "zh-TW": "PicGo 路徑"
+  },
+  "Unix 换行符 (LF)": {
+    "en": "Unix line endings (LF)",
+    "zh-TW": "Unix 換行符 (LF)"
+  },
+  "Windows 换行符 (CRLF)": {
+    "en": "Windows line endings (CRLF)",
+    "zh-TW": "Windows 換行符 (CRLF)"
+  },
+  "一体化": {
+    "en": "Integrated",
+    "zh-TW": "一體化"
+  },
+  "一级标题": {
+    "en": "Heading 1",
+    "zh-TW": "一級標題"
+  },
+  "三级标题": {
+    "en": "Heading 3",
+    "zh-TW": "三級標題"
+  },
+  "上传图片": {
+    "en": "Upload image",
+    "zh-TW": "上傳圖片"
+  },
+  "上传所有本地图片": {
+    "en": "Upload local images",
+    "zh-TW": "上傳所有本地圖片"
+  },
+  "上传服务": {
+    "en": "Upload provider",
+    "zh-TW": "上傳服務"
+  },
+  "上传服务设定": {
+    "en": "Configure uploads",
+    "zh-TW": "上傳服務設定"
+  },
+  "上方插入行": {
+    "en": "Insert row above",
+    "zh-TW": "上方插入行"
+  },
+  "上标": {
+    "en": "Superscript",
+    "zh-TW": "上標"
+  },
+  "上移该行": {
+    "en": "Move row up",
+    "zh-TW": "上移該行"
+  },
+  "下划线": {
+    "en": "Underline",
+    "zh-TW": "下劃線"
+  },
+  "下方插入行": {
+    "en": "Insert row below",
+    "zh-TW": "下方插入行"
+  },
+  "下标": {
+    "en": "Subscript",
+    "zh-TW": "下標"
+  },
+  "下移该行": {
+    "en": "Move row down",
+    "zh-TW": "下移該行"
+  },
+  "专注模式": {
+    "en": "Focus mode",
+    "zh-TW": "專注模式"
+  },
+  "为整个代码块调整缩进": {
+    "en": "Reindent code block",
+    "zh-TW": "為整個代碼塊調整縮進"
+  },
+  "为相对路径添加 ./": {
+    "en": "Prefix relative paths with ./",
+    "zh-TW": "為相對路徑添加 ./"
+  },
+  "为选中内容调整缩进": {
+    "en": "Reindent selection",
+    "zh-TW": "為選中內容調整縮進"
+  },
+  "主题": {
+    "en": "Themes",
+    "zh-TW": "主題"
+  },
+  "二级标题": {
+    "en": "Heading 2",
+    "zh-TW": "二級標題"
+  },
+  "五级标题": {
+    "en": "Heading 5",
+    "zh-TW": "五級標題"
+  },
+  "代码": {
+    "en": "Inline code",
+    "zh-TW": "代碼"
+  },
+  "代码块": {
+    "en": "Code block",
+    "zh-TW": "代碼塊"
+  },
+  "代码工具": {
+    "en": "Code actions",
+    "zh-TW": "代碼工具"
+  },
+  "任务列表": {
+    "en": "Task list",
+    "zh-TW": "任務列表"
+  },
+  "任务状态": {
+    "en": "Task completion",
+    "zh-TW": "任務狀態"
+  },
+  "优先使用相对路径": {
+    "en": "Prefer relative paths",
+    "zh-TW": "優先使用相對路徑"
+  },
+  "保存": {
+    "en": "Save",
+    "zh-TW": "保存"
+  },
+  "保存全部打开的文件": {
+    "en": "Save all open documents",
+    "zh-TW": "保存全部打開的文件"
+  },
+  "保存时在文末添加空行": {
+    "en": "Add a final newline when saving",
+    "zh-TW": "保存時在文末添加空行"
+  },
+  "保持窗口在最前端": {
+    "en": "Keep window on top",
+    "zh-TW": "保持窗口在最前端"
+  },
+  "保留单换行符": {
+    "en": "Preserve single line breaks",
+    "zh-TW": "保留單換行符"
+  },
+  "偏好设置": {
+    "en": "Preferences",
+    "zh-TW": "偏好設定"
+  },
+  "全屏": {
+    "en": "Full screen",
+    "zh-TW": "全屏"
+  },
+  "全选": {
+    "en": "Select all",
+    "zh-TW": "全選"
+  },
+  "全部展开": {
+    "en": "Expand all",
+    "zh-TW": "全部展開"
+  },
+  "全部折叠": {
+    "en": "Collapse all",
+    "zh-TW": "全部折疊"
+  },
+  "公式块": {
+    "en": "Display math",
+    "zh-TW": "公式塊"
+  },
+  "六级标题": {
+    "en": "Heading 6",
+    "zh-TW": "六級標題"
+  },
+  "关闭": {
+    "en": "Close",
+    "zh-TW": "關閉"
+  },
+  "内容目录": {
+    "en": "Table of contents",
+    "zh-TW": "內容目錄"
+  },
+  "内联公式": {
+    "en": "Inline math",
+    "zh-TW": "內聯公式"
+  },
+  "减少缩进": {
+    "en": "Decrease indent",
+    "zh-TW": "減少縮進"
+  },
+  "分钟": {
+    "en": "minutes",
+    "zh-TW": "分鐘"
+  },
+  "切换任务状态": {
+    "en": "Toggle task completion",
+    "zh-TW": "切換任務狀態"
+  },
+  "切换全屏": {
+    "en": "Toggle full screen",
+    "zh-TW": "切換全屏"
+  },
+  "列表缩进": {
+    "en": "List indentation",
+    "zh-TW": "列表縮進"
+  },
+  "创建副本": {
+    "en": "Duplicate",
+    "zh-TW": "創建副本"
+  },
+  "删除": {
+    "en": "Delete",
+    "zh-TW": "刪除"
+  },
+  "删除代码块": {
+    "en": "Remove code block",
+    "zh-TW": "刪除代碼塊"
+  },
+  "删除列": {
+    "en": "Delete column",
+    "zh-TW": "刪除列"
+  },
+  "删除图片": {
+    "en": "Remove image",
+    "zh-TW": "刪除圖片"
+  },
+  "删除图片文件": {
+    "en": "Delete image file",
+    "zh-TW": "刪除圖片文件"
+  },
+  "删除块": {
+    "en": "Delete block",
+    "zh-TW": "刪除塊"
+  },
+  "删除当前格式文本": {
+    "en": "Delete formatted text",
+    "zh-TW": "刪除當前格式文本"
+  },
+  "删除当前行或句": {
+    "en": "Delete line or sentence",
+    "zh-TW": "刪除當前行或句"
+  },
+  "删除当前词": {
+    "en": "Delete word",
+    "zh-TW": "刪除當前詞"
+  },
+  "删除所选范围": {
+    "en": "Delete selection",
+    "zh-TW": "刪除所選范圍"
+  },
+  "删除线": {
+    "en": "Strikethrough",
+    "zh-TW": "刪除線"
+  },
+  "删除范围": {
+    "en": "Delete range",
+    "zh-TW": "刪除范圍"
+  },
+  "删除行": {
+    "en": "Delete row",
+    "zh-TW": "刪除行"
+  },
+  "删除表格": {
+    "en": "Delete table",
+    "zh-TW": "刪除表格"
+  },
+  "刷新": {
+    "en": "Refresh",
+    "zh-TW": "刷新"
+  },
+  "刷新所有数学公式": {
+    "en": "Rerender all equations",
+    "zh-TW": "刷新所有數學公式"
+  },
+  "剪切": {
+    "en": "Cut",
+    "zh-TW": "剪切"
+  },
+  "加粗": {
+    "en": "Bold",
+    "zh-TW": "加粗"
+  },
+  "区分大小写": {
+    "en": "Match case",
+    "zh-TW": "區分大小寫"
+  },
+  "取消": {
+    "en": "Cancel",
+    "zh-TW": "取消"
+  },
+  "取消固定": {
+    "en": "Unpin",
+    "zh-TW": "取消固定"
+  },
+  "另存为": {
+    "en": "Save as",
+    "zh-TW": "另存為"
+  },
+  "可执行文件": {
+    "en": "Executable",
+    "zh-TW": "可執行文件"
+  },
+  "右侧插入列": {
+    "en": "Insert column to the right",
+    "zh-TW": "右側插入列"
+  },
+  "右对齐": {
+    "en": "Align right",
+    "zh-TW": "右對齊"
+  },
+  "右移该列": {
+    "en": "Move column right",
+    "zh-TW": "右移該列"
+  },
+  "启用源代码模式": {
+    "en": "Switch to source mode",
+    "zh-TW": "啟用源代碼模式"
+  },
+  "四级标题": {
+    "en": "Heading 4",
+    "zh-TW": "四級標題"
+  },
+  "固定": {
+    "en": "Pin",
+    "zh-TW": "固定"
+  },
+  "图像": {
+    "en": "Images",
+    "zh-TW": "圖像"
+  },
+  "图片语法偏好": {
+    "en": "Preferred image syntax",
+    "zh-TW": "圖片語法偏好"
+  },
+  "在上方插入段落": {
+    "en": "Insert paragraph above",
+    "zh-TW": "在上方插入段落"
+  },
+  "在下方插入段落": {
+    "en": "Insert paragraph below",
+    "zh-TW": "在下方插入段落"
+  },
+  "在侧边栏中显示": {
+    "en": "Show in sidebar",
+    "zh-TW": "在側邊欄中顯示"
+  },
+  "在新窗口中打开": {
+    "en": "Open in new window",
+    "zh-TW": "在新窗口中打開"
+  },
+  "在资源管理器中显示": {
+    "en": "Show in File Explorer",
+    "zh-TW": "在資源管理器中顯示"
+  },
+  "增加缩进": {
+    "en": "Increase indent",
+    "zh-TW": "增加縮進"
+  },
+  "复制": {
+    "en": "Copy",
+    "zh-TW": "復制"
+  },
+  "复制为 HTML 代码": {
+    "en": "Copy HTML source",
+    "zh-TW": "復制為 HTML 代碼"
+  },
+  "复制为 Markdown": {
+    "en": "Copy Markdown source",
+    "zh-TW": "復制為 Markdown"
+  },
+  "复制为纯文本": {
+    "en": "Copy plain text",
+    "zh-TW": "復制為純文本"
+  },
+  "复制代码块内容": {
+    "en": "Copy code contents",
+    "zh-TW": "復制代碼塊內容"
+  },
+  "复制内容并简化格式": {
+    "en": "Copy with simplified formatting",
+    "zh-TW": "復制內容并簡化格式"
+  },
+  "复制图片到…": {
+    "en": "Copy image to…",
+    "zh-TW": "復制圖片到…"
+  },
+  "复制图片到文件夹": {
+    "en": "Copy image to folder",
+    "zh-TW": "復制圖片到文件夾"
+  },
+  "复制文件路径": {
+    "en": "Copy file path",
+    "zh-TW": "復制文件路徑"
+  },
+  "复制表格": {
+    "en": "Copy table",
+    "zh-TW": "復制表格"
+  },
+  "复制链接地址": {
+    "en": "Copy link URL",
+    "zh-TW": "復制鏈接地址"
+  },
+  "外观": {
+    "en": "Appearance",
+    "zh-TW": "外觀"
+  },
+  "大纲": {
+    "en": "Outline",
+    "zh-TW": "大綱"
+  },
+  "大纲视图（可折叠）": {
+    "en": "Collapsible outline",
+    "zh-TW": "大綱視圖（可折疊）"
+  },
+  "大纲视图（无折叠）": {
+    "en": "Flat outline",
+    "zh-TW": "大綱視圖（無折疊）"
+  },
+  "字体大小": {
+    "en": "Font size",
+    "zh-TW": "字體大小"
+  },
+  "字数统计": {
+    "en": "Word count",
+    "zh-TW": "字數統計"
+  },
+  "字数统计窗口": {
+    "en": "Document statistics",
+    "zh-TW": "字數統計窗口"
+  },
+  "字符": {
+    "en": "characters",
+    "zh-TW": "字符"
+  },
+  "实际大小": {
+    "en": "Actual size",
+    "zh-TW": "實際大小"
+  },
+  "导入": {
+    "en": "Import",
+    "zh-TW": "導入"
+  },
+  "导入…": {
+    "en": "Import…",
+    "zh-TW": "導入…"
+  },
+  "导出": {
+    "en": "Export",
+    "zh-TW": "導出"
+  },
+  "属性": {
+    "en": "Properties",
+    "zh-TW": "屬性"
+  },
+  "左侧插入列": {
+    "en": "Insert column to the left",
+    "zh-TW": "左側插入列"
+  },
+  "左对齐": {
+    "en": "Align left",
+    "zh-TW": "左對齊"
+  },
+  "左移该列": {
+    "en": "Move column left",
+    "zh-TW": "左移該列"
+  },
+  "已保存": {
+    "en": "Saved",
+    "zh-TW": "已保存"
+  },
+  "帮助": {
+    "en": "Help",
+    "zh-TW": "幫助"
+  },
+  "建议内容": {
+    "en": "Tip",
+    "zh-TW": "建議內容"
+  },
+  "开发者工具": {
+    "en": "Developer tools",
+    "zh-TW": "開發者工具"
+  },
+  "引用": {
+    "en": "Blockquote",
+    "zh-TW": "引用"
+  },
+  "当插入本地图片时": {
+    "en": "When inserting a local image",
+    "zh-TW": "當插入本地圖片時"
+  },
+  "快速打开": {
+    "en": "Quick open",
+    "zh-TW": "快速打開"
+  },
+  "打印": {
+    "en": "Print",
+    "zh-TW": "打印"
+  },
+  "打字机模式": {
+    "en": "Typewriter mode",
+    "zh-TW": "打字機模式"
+  },
+  "打开": {
+    "en": "Open",
+    "zh-TW": "打開"
+  },
+  "打开…": {
+    "en": "Open…",
+    "zh-TW": "打開…"
+  },
+  "打开主题文件夹": {
+    "en": "Open themes folder",
+    "zh-TW": "打開主題文件夾"
+  },
+  "打开文件位置": {
+    "en": "Show file location",
+    "zh-TW": "打開文件位置"
+  },
+  "打开文件夹": {
+    "en": "Open folder",
+    "zh-TW": "打開文件夾"
+  },
+  "打开文件夹…": {
+    "en": "Open folder…",
+    "zh-TW": "打開文件夾…"
+  },
+  "打开最近文件": {
+    "en": "Recent documents",
+    "zh-TW": "打開最近文件"
+  },
+  "打开链接": {
+    "en": "Follow link",
+    "zh-TW": "打開鏈接"
+  },
+  "拷贝图片": {
+    "en": "Copy image",
+    "zh-TW": "拷貝圖片"
+  },
+  "拼写检查": {
+    "en": "Check spelling",
+    "zh-TW": "拼寫檢查"
+  },
+  "按文件夹分组": {
+    "en": "Group by folder",
+    "zh-TW": "按文件夾分組"
+  },
+  "换行": {
+    "en": "Line break",
+    "zh-TW": "換行"
+  },
+  "换行符": {
+    "en": "Line endings",
+    "zh-TW": "換行符"
+  },
+  "排序": {
+    "en": "Sort order",
+    "zh-TW": "排序"
+  },
+  "提升标题级别": {
+    "en": "Promote heading",
+    "zh-TW": "提升標題級別"
+  },
+  "提醒内容": {
+    "en": "Note",
+    "zh-TW": "提醒內容"
+  },
+  "插入": {
+    "en": "Insert",
+    "zh-TW": "插入"
+  },
+  "插入时自动转义图片 URL": {
+    "en": "Escape image URLs on insertion",
+    "zh-TW": "插入時自動轉義圖片 URL"
+  },
+  "插入表格": {
+    "en": "Insert table",
+    "zh-TW": "插入表格"
+  },
+  "搜索": {
+    "en": "Search",
+    "zh-TW": "搜索"
+  },
+  "搜索…": {
+    "en": "Search…",
+    "zh-TW": "搜索…"
+  },
+  "撤消": {
+    "en": "Undo",
+    "zh-TW": "撤消"
+  },
+  "操作": {
+    "en": "Actions",
+    "zh-TW": "操作"
+  },
+  "放大": {
+    "en": "Zoom in",
+    "zh-TW": "放大"
+  },
+  "放弃更改": {
+    "en": "Discard changes",
+    "zh-TW": "放棄更改"
+  },
+  "数学工具": {
+    "en": "Math actions",
+    "zh-TW": "數學工具"
+  },
+  "文件": {
+    "en": "File",
+    "zh-TW": "文件"
+  },
+  "文件名": {
+    "en": "Filename",
+    "zh-TW": "文件名"
+  },
+  "文件树": {
+    "en": "File tree",
+    "zh-TW": "文件樹"
+  },
+  "文档列表": {
+    "en": "Document list",
+    "zh-TW": "文檔列表"
+  },
+  "文档树": {
+    "en": "Document tree",
+    "zh-TW": "文檔樹"
+  },
+  "斜体": {
+    "en": "Italic",
+    "zh-TW": "斜體"
+  },
+  "新建": {
+    "en": "New",
+    "zh-TW": "新建"
+  },
+  "新建文件": {
+    "en": "New file",
+    "zh-TW": "新建文件"
+  },
+  "新建文件夹": {
+    "en": "New folder",
+    "zh-TW": "新建文件夾"
+  },
+  "无序列表": {
+    "en": "Bullet list",
+    "zh-TW": "無序列表"
+  },
+  "无特殊操作": {
+    "en": "Keep original location",
+    "zh-TW": "無特殊操作"
+  },
+  "显示 <br/>": {
+    "en": "Render <br/> tags",
+    "zh-TW": "顯示 <br/>"
+  },
+  "显示状态栏": {
+    "en": "Show status bar",
+    "zh-TW": "顯示狀態欄"
+  },
+  "显示／隐藏侧边栏": {
+    "en": "Toggle sidebar",
+    "zh-TW": "顯示／隱藏側邊欄"
+  },
+  "智能引号": {
+    "en": "Smart quotes",
+    "zh-TW": "智能引號"
+  },
+  "智能标点": {
+    "en": "Smart punctuation",
+    "zh-TW": "智能標點"
+  },
+  "智能破折号": {
+    "en": "Smart dashes",
+    "zh-TW": "智能破折號"
+  },
+  "更多格式": {
+    "en": "More formatting",
+    "zh-TW": "更多格式"
+  },
+  "替换": {
+    "en": "Replace",
+    "zh-TW": "替換"
+  },
+  "替换为": {
+    "en": "Replace with",
+    "zh-TW": "替換為"
+  },
+  "最小化": {
+    "en": "Minimize",
+    "zh-TW": "最小化"
+  },
+  "最近使用的目录": {
+    "en": "Recent folders",
+    "zh-TW": "最近使用的目錄"
+  },
+  "有序列表": {
+    "en": "Numbered list",
+    "zh-TW": "有序列表"
+  },
+  "查找": {
+    "en": "Find",
+    "zh-TW": "查找"
+  },
+  "查找上一个": {
+    "en": "Find previous",
+    "zh-TW": "查找上一個"
+  },
+  "查找下一个": {
+    "en": "Find next",
+    "zh-TW": "查找下一個"
+  },
+  "查找和替换": {
+    "en": "Find and replace",
+    "zh-TW": "查找和替換"
+  },
+  "标记为已完成": {
+    "en": "Mark complete",
+    "zh-TW": "標記為已完成"
+  },
+  "标记为未完成": {
+    "en": "Mark incomplete",
+    "zh-TW": "標記為未完成"
+  },
+  "格式": {
+    "en": "Format",
+    "zh-TW": "格式"
+  },
+  "格式化表格源码": {
+    "en": "Format table source",
+    "zh-TW": "格式化表格源碼"
+  },
+  "正则表达式": {
+    "en": "Regular expression",
+    "zh-TW": "正則表達式"
+  },
+  "段落": {
+    "en": "Paragraph",
+    "zh-TW": "段落"
+  },
+  "水平分割线": {
+    "en": "Horizontal rule",
+    "zh-TW": "水平分割線"
+  },
+  "注意内容": {
+    "en": "Caution",
+    "zh-TW": "注意內容"
+  },
+  "注释": {
+    "en": "Comment",
+    "zh-TW": "注釋"
+  },
+  "浅色主题": {
+    "en": "Light theme",
+    "zh-TW": "淺色主題"
+  },
+  "深色主题": {
+    "en": "Dark theme",
+    "zh-TW": "深色主題"
+  },
+  "清除最近文件": {
+    "en": "Clear recent documents",
+    "zh-TW": "清除最近文件"
+  },
+  "清除样式": {
+    "en": "Clear formatting",
+    "zh-TW": "清除樣式"
+  },
+  "渲染时转换": {
+    "en": "Convert during rendering",
+    "zh-TW": "渲染時轉換"
+  },
+  "源代码模式": {
+    "en": "Source mode",
+    "zh-TW": "源代碼模式"
+  },
+  "状态栏": {
+    "en": "Status bar",
+    "zh-TW": "狀態欄"
+  },
+  "目录": {
+    "en": "Contents",
+    "zh-TW": "目錄"
+  },
+  "确定": {
+    "en": "OK",
+    "zh-TW": "確定"
+  },
+  "空": {
+    "en": "Empty",
+    "zh-TW": "空"
+  },
+  "空格与换行": {
+    "en": "Whitespace and line breaks",
+    "zh-TW": "空格與換行"
+  },
+  "窗口样式": {
+    "en": "Window style",
+    "zh-TW": "窗口樣式"
+  },
+  "粘贴": {
+    "en": "Paste",
+    "zh-TW": "粘貼"
+  },
+  "粘贴为纯文本": {
+    "en": "Paste plain text",
+    "zh-TW": "粘貼為純文本"
+  },
+  "经典": {
+    "en": "Classic",
+    "zh-TW": "經典"
+  },
+  "编辑": {
+    "en": "Edit",
+    "zh-TW": "編輯"
+  },
+  "编辑器": {
+    "en": "Editor",
+    "zh-TW": "編輯器"
+  },
+  "缩小": {
+    "en": "Zoom out",
+    "zh-TW": "縮小"
+  },
+  "缩放图片": {
+    "en": "Resize image",
+    "zh-TW": "縮放圖片"
+  },
+  "脚注": {
+    "en": "Footnote",
+    "zh-TW": "腳注"
+  },
+  "自动": {
+    "en": "Automatic",
+    "zh-TW": "自動"
+  },
+  "自动保存": {
+    "en": "Autosave",
+    "zh-TW": "自動保存"
+  },
+  "自动（推荐）": {
+    "en": "Automatic (recommended)",
+    "zh-TW": "自動（推薦）"
+  },
+  "自定义": {
+    "en": "Custom",
+    "zh-TW": "自定義"
+  },
+  "菜单": {
+    "en": "Menu",
+    "zh-TW": "菜單"
+  },
+  "行": {
+    "en": "lines",
+    "zh-TW": "行"
+  },
+  "表格": {
+    "en": "Table",
+    "zh-TW": "表格"
+  },
+  "视图": {
+    "en": "View",
+    "zh-TW": "視圖"
+  },
+  "解析 Markdown 时允许并转化 Unicode 标点": {
+    "en": "Normalize Unicode punctuation in Markdown",
+    "zh-TW": "解析 Markdown 時允許并轉化 Unicode 標點"
+  },
+  "警告内容": {
+    "en": "Warning",
+    "zh-TW": "警告內容"
+  },
+  "警告框": {
+    "en": "Alert",
+    "zh-TW": "警告框"
+  },
+  "设置图片根目录": {
+    "en": "Set image root folder",
+    "zh-TW": "設置圖片根目錄"
+  },
+  "词": {
+    "en": "words",
+    "zh-TW": "詞"
+  },
+  "词每分钟": {
+    "en": "words per minute",
+    "zh-TW": "詞每分鐘"
+  },
+  "语言": {
+    "en": "Language",
+    "zh-TW": "語言"
+  },
+  "说明": {
+    "en": "Description",
+    "zh-TW": "說明"
+  },
+  "超链接": {
+    "en": "Link",
+    "zh-TW": "超鏈接"
+  },
+  "路径": {
+    "en": "Path",
+    "zh-TW": "路徑"
+  },
+  "跳转到": {
+    "en": "Go to",
+    "zh-TW": "跳轉到"
+  },
+  "转换图片语法": {
+    "en": "Convert image syntax",
+    "zh-TW": "轉換圖片語法"
+  },
+  "输入时转换": {
+    "en": "Convert while typing",
+    "zh-TW": "輸入時轉換"
+  },
+  "返回": {
+    "en": "Back",
+    "zh-TW": "返回"
+  },
+  "退出源代码模式": {
+    "en": "Leave source mode",
+    "zh-TW": "退出源代碼模式"
+  },
+  "选中当前格式文本": {
+    "en": "Select formatted text",
+    "zh-TW": "選中當前格式文本"
+  },
+  "选中当前行或句": {
+    "en": "Select line or sentence",
+    "zh-TW": "選中當前行或句"
+  },
+  "选中当前词": {
+    "en": "Select word",
+    "zh-TW": "選中當前詞"
+  },
+  "选择段落或块": {
+    "en": "Select paragraph or block",
+    "zh-TW": "選擇段落或塊"
+  },
+  "选择编码重新打开": {
+    "en": "Reopen with encoding",
+    "zh-TW": "選擇編碼重新打開"
+  },
+  "通用": {
+    "en": "General",
+    "zh-TW": "通用"
+  },
+  "重做": {
+    "en": "Redo",
+    "zh-TW": "重做"
+  },
+  "重命名": {
+    "en": "Rename",
+    "zh-TW": "重命名"
+  },
+  "重新加载所有图片": {
+    "en": "Reload images",
+    "zh-TW": "重新加載所有圖片"
+  },
+  "重新打开关闭的文件": {
+    "en": "Reopen closed document",
+    "zh-TW": "重新打開關閉的文件"
+  },
+  "重置": {
+    "en": "Reset",
+    "zh-TW": "重置"
+  },
+  "重要内容": {
+    "en": "Important",
+    "zh-TW": "重要內容"
+  },
+  "链接引用": {
+    "en": "Link reference",
+    "zh-TW": "鏈接引用"
+  },
+  "链接操作": {
+    "en": "Link actions",
+    "zh-TW": "鏈接操作"
+  },
+  "阅读速度": {
+    "en": "Reading speed",
+    "zh-TW": "閱讀速度"
+  },
+  "降低标题级别": {
+    "en": "Demote heading",
+    "zh-TW": "降低標題級別"
+  },
+  "预览": {
+    "en": "Preview",
+    "zh-TW": "預覽"
+  },
+  "首行缩进": {
+    "en": "Indent first line",
+    "zh-TW": "首行縮進"
+  },
+  "验证图片上传选项": {
+    "en": "Test upload configuration",
+    "zh-TW": "驗證圖片上傳選項"
+  },
+  "高亮": {
+    "en": "Highlight",
+    "zh-TW": "高亮"
+  },
+  "高亮当前标题": {
+    "en": "Highlight current heading",
+    "zh-TW": "高亮當前標題"
+  },
+  "0 词": {
+    "en": "0 words",
+    "zh-TW": "0 詞"
+  },
+  "Ctrl+/ 切换源码模式。撤销与重做在同一份文档中进行。": {
+    "en": "Ctrl+/ switches source mode. Undo and redo use the same document.",
+    "zh-TW": "Ctrl+/ 切換源碼模式。撤銷與重做在同一份文檔中進行。"
+  },
+  "HTML 代码": {
+    "en": "HTML code",
+    "zh-TW": "HTML 代碼"
+  },
+  "Markdown 主题": {
+    "en": "Markdown theme",
+    "zh-TW": "Markdown 主題"
+  },
+  "Markdown 编辑器": {
+    "en": "Markdown editor",
+    "zh-TW": "Markdown 編輯器"
+  },
+  "Markdown 语法参考": {
+    "en": "Markdown syntax reference",
+    "zh-TW": "Markdown 語法參考"
+  },
+  "Pandoc 路径无效。": {
+    "en": "Invalid Pandoc path.",
+    "zh-TW": "Pandoc 路徑無效。"
+  },
+  "Pandoc 转换超时": {
+    "en": "Pandoc conversion timed out",
+    "zh-TW": "Pandoc 轉換超時"
+  },
+  "PicGo 上传失败，请检查图床配置和 PicGo 日志。": {
+    "en": "PicGo upload failed. Check your image host settings and PicGo logs.",
+    "zh-TW": "PicGo 上傳失敗，請檢查圖床配置和 PicGo 日志。"
+  },
+  "PicGo 服务地址必须是本机 HTTP 地址。": {
+    "en": "The PicGo server must use a local HTTP address.",
+    "zh-TW": "PicGo 服務地址必須是本機 HTTP 地址。"
+  },
+  "PicGo 未返回 HTTP(S) 图片地址。": {
+    "en": "PicGo did not return an HTTP(S) image URL.",
+    "zh-TW": "PicGo 未返回 HTTP(S) 圖片地址。"
+  },
+  "PicGo 未返回有效图片地址。": {
+    "en": "PicGo did not return a valid image URL.",
+    "zh-TW": "PicGo 未返回有效圖片地址。"
+  },
+  "PicGo 返回的图片地址数量不符。": {
+    "en": "PicGo returned an unexpected number of image URLs.",
+    "zh-TW": "PicGo 返回的圖片地址數量不符。"
+  },
+  "PicGo 返回的数据不是有效 JSON。": {
+    "en": "PicGo returned invalid JSON.",
+    "zh-TW": "PicGo 返回的數據不是有效 JSON。"
+  },
+  "PicGo-Core 上传失败，未返回成功结果。": {
+    "en": "PicGo-Core upload failed without a success result.",
+    "zh-TW": "PicGo-Core 上傳失敗，未返回成功結果。"
+  },
+  "PicGo-Core 返回的图片地址数量不符。": {
+    "en": "PicGo-Core returned an unexpected number of image URLs.",
+    "zh-TW": "PicGo-Core 返回的圖片地址數量不符。"
+  },
+  "Word 导出文件必须为 .docx": {
+    "en": "Word exports must use the .docx extension",
+    "zh-TW": "Word 導出文件必須為 .docx"
+  },
+  "Word 已导出": {
+    "en": "Word document exported",
+    "zh-TW": "Word 已導出"
+  },
+  "上一个": {
+    "en": "Previous",
+    "zh-TW": "上一個"
+  },
+  "上传成功": {
+    "en": "Upload successful",
+    "zh-TW": "上傳成功"
+  },
+  "上传由你手动发起，插入、打开和保存文档不会自动上传图片。": {
+    "en": "Uploads are manual. Inserting, opening or saving a document does not upload images automatically.",
+    "zh-TW": "上傳由你手動發起，插入、打開和保存文檔不會自動上傳圖片。"
+  },
+  "下一个": {
+    "en": "Next",
+    "zh-TW": "下一個"
+  },
+  "不支持的图片文件。": {
+    "en": "Unsupported image file.",
+    "zh-TW": "不支持的圖片文件。"
+  },
+  "不支持的文件编码": {
+    "en": "Unsupported file encoding",
+    "zh-TW": "不支持的文件編碼"
+  },
+  "不能重命名已打开的根文件夹。": {
+    "en": "The open root folder cannot be renamed.",
+    "zh-TW": "不能重命名已打開的根文件夾。"
+  },
+  "专注写作，记录想法。": {
+    "en": "Focus on writing. Capture your ideas.",
+    "zh-TW": "專注寫作，記錄想法。"
+  },
+  "中（240 词每分钟）": {
+    "en": "Medium (240 words per minute)",
+    "zh-TW": "中（240 詞每分鐘）"
+  },
+  "主题文件名无效。": {
+    "en": "Invalid theme filename.",
+    "zh-TW": "主題文件名無效。"
+  },
+  "从这里开始写作…": {
+    "en": "Start writing here…",
+    "zh-TW": "從這里開始寫作…"
+  },
+  "代码。": {
+    "en": "Code.",
+    "zh-TW": "代碼。"
+  },
+  "使用 Ctrl+S 保存，另存为使用 Ctrl+Shift+S。关闭未保存的文档时会提示保存。": {
+    "en": "Use Ctrl+S to save and Ctrl+Shift+S to save as. Unsaved changes prompt you to save before closing.",
+    "zh-TW": "使用 Ctrl+S 保存，另存為使用 Ctrl+Shift+S。關閉未保存的文檔時會提示保存。"
+  },
+  "侧栏视图": {
+    "en": "Sidebar view",
+    "zh-TW": "側欄視圖"
+  },
+  "保存与恢复": {
+    "en": "Save and recovery",
+    "zh-TW": "保存與恢復"
+  },
+  "保存前检查磁盘上的文件是否被修改；文件内容保留原有换行符。": {
+    "en": "Checks for external file changes before saving and preserves the original line endings.",
+    "zh-TW": "保存前檢查磁盤上的文件是否被修改；文件內容保留原有換行符。"
+  },
+  "保留原始图片位置。选中本地图片并右键，选择“上传图片”将其上传并替换为返回的网址。": {
+    "en": "Keep images in their original locations. Right-click a local image and choose Upload Image to upload it and replace its URL.",
+    "zh-TW": "保留原始圖片位置。選中本地圖片并右鍵，選擇“上傳圖片”將其上傳并替換為返回的網址。"
+  },
+  "修改会自动保存，在下次启动时恢复。": {
+    "en": "Changes are saved automatically and restored on the next launch.",
+    "zh-TW": "修改會自動保存，在下次啟動時恢復。"
+  },
+  "倍": {
+    "en": "×",
+    "zh-TW": "倍"
+  },
+  "偏好设置…": {
+    "en": "Preferences…",
+    "zh-TW": "偏好設置…"
+  },
+  "偏好设置分类": {
+    "en": "Preference categories",
+    "zh-TW": "偏好設置分類"
+  },
+  "全字匹配": {
+    "en": "Whole word",
+    "zh-TW": "全字匹配"
+  },
+  "全局图像设置…": {
+    "en": "Global Image Settings…",
+    "zh-TW": "全局圖像設置…"
+  },
+  "全文": {
+    "en": "Entire document",
+    "zh-TW": "全文"
+  },
+  "全部替换": {
+    "en": "Replace All",
+    "zh-TW": "全部替換"
+  },
+  "共享引用检查超过 10000 个文件，请缩小文档所在目录后重试。": {
+    "en": "The shared-reference check exceeded 10,000 files. Use a smaller document folder and try again.",
+    "zh-TW": "共享引用檢查超過 10000 個文件，請縮小文檔所在目錄后重試。"
+  },
+  "关于墨简": {
+    "en": "About Inkslip",
+    "zh-TW": "關于墨簡"
+  },
+  "关闭偏好设置": {
+    "en": "Close preferences",
+    "zh-TW": "關閉偏好設置"
+  },
+  "关闭大纲查找": {
+    "en": "Close outline search",
+    "zh-TW": "關閉大綱查找"
+  },
+  "关闭文件夹搜索": {
+    "en": "Close folder search",
+    "zh-TW": "關閉文件夾搜索"
+  },
+  "关闭文件夹菜单": {
+    "en": "Close folder menu",
+    "zh-TW": "關閉文件夾菜單"
+  },
+  "关闭查找": {
+    "en": "Close search",
+    "zh-TW": "關閉查找"
+  },
+  "关闭窗口": {
+    "en": "Close window",
+    "zh-TW": "關閉窗口"
+  },
+  "内容宽度": {
+    "en": "Content width",
+    "zh-TW": "內容寬度"
+  },
+  "切换为文件列表": {
+    "en": "Switch to file list",
+    "zh-TW": "切換為文件列表"
+  },
+  "切换为文件树": {
+    "en": "Switch to file tree",
+    "zh-TW": "切換為文件樹"
+  },
+  "切换任务完成状态": {
+    "en": "Toggle task completion",
+    "zh-TW": "切換任務完成狀態"
+  },
+  "列数": {
+    "en": "Columns",
+    "zh-TW": "列數"
+  },
+  "列表项目": {
+    "en": "List item",
+    "zh-TW": "列表項目"
+  },
+  "创建副本…": {
+    "en": "Create Duplicate…",
+    "zh-TW": "創建副本…"
+  },
+  "删除…": {
+    "en": "Delete…",
+    "zh-TW": "刪除…"
+  },
+  "删除图片文件…": {
+    "en": "Delete Image File…",
+    "zh-TW": "刪除圖片文件…"
+  },
+  "删除引用": {
+    "en": "Delete Reference",
+    "zh-TW": "刪除引用"
+  },
+  "删除段落": {
+    "en": "Delete Paragraph",
+    "zh-TW": "刪除段落"
+  },
+  "删除选中内容": {
+    "en": "Delete Selection",
+    "zh-TW": "刪除選中內容"
+  },
+  "剪切、复制、粘贴和删除选中内容": {
+    "en": "Cut, copy, paste and delete selected text",
+    "zh-TW": "剪切、復制、粘貼和刪除選中內容"
+  },
+  "剪贴板中没有受支持的图片数据": {
+    "en": "The clipboard contains no supported image data",
+    "zh-TW": "剪貼板中沒有受支持的圖片數據"
+  },
+  "加入词典": {
+    "en": "Add to Dictionary",
+    "zh-TW": "加入詞典"
+  },
+  "单一编辑区支持实时预览与源码模式；点击已渲染的段落可继续编辑原文。": {
+    "en": "Edit and preview in one pane. Click a rendered paragraph to edit its Markdown source.",
+    "zh-TW": "單一編輯區支持實時預覽與源碼模式；點擊已渲染的段落可繼續編輯原文。"
+  },
+  "原位置已有不同图片，未覆盖该文件。": {
+    "en": "A different image already exists at the original location. It was not overwritten.",
+    "zh-TW": "原位置已有不同圖片，未覆蓋該文件。"
+  },
+  "原图片已变化，未重做磁盘操作。": {
+    "en": "The original image has changed. The file operation was not redone.",
+    "zh-TW": "原圖片已變化，未重做磁盤操作。"
+  },
+  "原始尺寸": {
+    "en": "Original Size",
+    "zh-TW": "原始尺寸"
+  },
+  "取消置顶": {
+    "en": "Unpin Window",
+    "zh-TW": "取消置頂"
+  },
+  "另存为…": {
+    "en": "Save As…",
+    "zh-TW": "另存為…"
+  },
+  "只处理新插入的本地图片。文档 YAML 策略优先于此默认设置；失败时保留原图片。": {
+    "en": "Applies only to newly inserted local images. Document YAML overrides this default. The original image is retained on failure.",
+    "zh-TW": "只處理新插入的本地圖片。文檔 YAML 策略優先于此默認設置；失敗時保留原圖片。"
+  },
+  "只能删除本地图片文件": {
+    "en": "Only local image files can be deleted",
+    "zh-TW": "只能刪除本地圖片文件"
+  },
+  "只能删除本地图片文件。": {
+    "en": "Only local image files can be deleted.",
+    "zh-TW": "只能刪除本地圖片文件。"
+  },
+  "只能访问已打开文件夹中的内容。": {
+    "en": "Only content within the open folder is accessible.",
+    "zh-TW": "只能訪問已打開文件夾中的內容。"
+  },
+  "启用源代码模式 · Ctrl+/": {
+    "en": "Enter source mode · Ctrl+/",
+    "zh-TW": "啟用源代碼模式 · Ctrl+/"
+  },
+  "启用英文拼写检查": {
+    "en": "Enable English spell checking",
+    "zh-TW": "啟用英文拼寫檢查"
+  },
+  "和": {
+    "en": "and",
+    "zh-TW": "和"
+  },
+  "图像偏好设置…": {
+    "en": "Image Preferences…",
+    "zh-TW": "圖像偏好設置…"
+  },
+  "图片": {
+    "en": "Image",
+    "zh-TW": "圖片"
+  },
+  "图片上传设置无效。": {
+    "en": "Invalid image upload settings.",
+    "zh-TW": "圖片上傳設置無效。"
+  },
+  "图片为空或超过 30 MB，未上传。": {
+    "en": "The image is empty or exceeds 30 MB. It was not uploaded.",
+    "zh-TW": "圖片為空或超過 30 MB，未上傳。"
+  },
+  "图片地址无效。": {
+    "en": "Invalid image address.",
+    "zh-TW": "圖片地址無效。"
+  },
+  "图片地址未返回支持的图片类型。": {
+    "en": "The image URL did not return a supported image type.",
+    "zh-TW": "圖片地址未返回支持的圖片類型。"
+  },
+  "图片尚未加载，无法确定缩放尺寸。": {
+    "en": "The image has not loaded. Its scaled size cannot be determined.",
+    "zh-TW": "圖片尚未加載，無法確定縮放尺寸。"
+  },
+  "图片已上传并更新引用定义，共用此引用的图片和链接也将更新": {
+    "en": "Image uploaded and reference definition updated. Images and links sharing this reference are also updated",
+    "zh-TW": "圖片已上傳并更新引用定義，共用此引用的圖片和鏈接也將更新"
+  },
+  "图片已上传，原文地址已替换": {
+    "en": "Image uploaded and source URL replaced",
+    "zh-TW": "圖片已上傳，原文地址已替換"
+  },
+  "图片已复制": {
+    "en": "Image copied",
+    "zh-TW": "圖片已復制"
+  },
+  "图片已粘贴": {
+    "en": "Image pasted",
+    "zh-TW": "圖片已粘貼"
+  },
+  "图片已重新加载": {
+    "en": "Image reloaded",
+    "zh-TW": "圖片已重新加載"
+  },
+  "图片插入策略无效。": {
+    "en": "Invalid image insertion settings.",
+    "zh-TW": "圖片插入策略無效。"
+  },
+  "图片文件不能超过 30 MB": {
+    "en": "Image files must not exceed 30 MB",
+    "zh-TW": "圖片文件不能超過 30 MB"
+  },
+  "图片文件已删除，可撤销恢复": {
+    "en": "Image file deleted. Undo to restore it",
+    "zh-TW": "圖片文件已刪除，可撤銷恢復"
+  },
+  "图片文件操作失败": {
+    "en": "Image file operation failed",
+    "zh-TW": "圖片文件操作失敗"
+  },
+  "图片文件请求无效。": {
+    "en": "Invalid image file request.",
+    "zh-TW": "圖片文件請求無效。"
+  },
+  "图片根目录必须是本地文件夹。": {
+    "en": "The image root must be a local folder.",
+    "zh-TW": "圖片根目錄必須是本地文件夾。"
+  },
+  "图片磁盘撤销失败": {
+    "en": "Image file undo failed",
+    "zh-TW": "圖片磁盤撤銷失敗"
+  },
+  "图片语法设置无效。": {
+    "en": "Invalid image syntax settings.",
+    "zh-TW": "圖片語法設置無效。"
+  },
+  "图片超过 30 MB，未上传。": {
+    "en": "The image exceeds 30 MB. It was not uploaded.",
+    "zh-TW": "圖片超過 30 MB，未上傳。"
+  },
+  "图片路径 / URL": {
+    "en": "Image path / URL",
+    "zh-TW": "圖片路徑 / URL"
+  },
+  "在 PicGo 中配置图床并启用 Server，默认端口 36677。未启动时可通过上方路径启动 PicGo。": {
+    "en": "Configure an image host in PicGo and enable Server (default port 36677). Set its executable path above to launch PicGo when needed.",
+    "zh-TW": "在 PicGo 中配置圖床并啟用 Server，默認端口 36677。未啟動時可通過上方路徑啟動 PicGo。"
+  },
+  "在浏览器中打开图片…": {
+    "en": "Open Image in Browser…",
+    "zh-TW": "在瀏覽器中打開圖片…"
+  },
+  "墨简 Inkslip": {
+    "en": "Inkslip",
+    "zh-TW": "墨簡 Inkslip"
+  },
+  "墨简 · Inkslip": {
+    "en": "Inkslip",
+    "zh-TW": "墨簡 · Inkslip"
+  },
+  "墨简使用 Electron、CodeMirror、markdown-it、KaTeX、Mermaid、DOMPurify 和 iconv-lite 等开源组件；许可证保留在程序目录 node_modules 各组件中。": {
+    "en": "Inkslip uses open source components including Electron, CodeMirror, markdown-it, KaTeX, Mermaid, DOMPurify and iconv-lite. Licenses are included in each component's node_modules directory.",
+    "zh-TW": "墨簡使用 Electron、CodeMirror、markdown-it、KaTeX、Mermaid、DOMPurify 和 iconv-lite 等開源組件；許可證保留在程序目錄 node_modules 各組件中。"
+  },
+  "墨简使用指南": {
+    "en": "Inkslip User Guide",
+    "zh-TW": "墨簡使用指南"
+  },
+  "墨简快捷键：Ctrl+N 新建 · Ctrl+O 打开 · Ctrl+S 保存 · Ctrl+/ 源码 · Ctrl+Shift+L 侧栏 · Ctrl+P 快速打开 · Ctrl+F 查找 · Ctrl+Z 撤消": {
+    "en": "Inkslip shortcuts: Ctrl+N New · Ctrl+O Open · Ctrl+S Save · Ctrl+/ Source · Ctrl+Shift+L Sidebar · Ctrl+P Quick Open · Ctrl+F Find · Ctrl+Z Undo",
+    "zh-TW": "墨簡快捷鍵：Ctrl+N 新建 · Ctrl+O 打開 · Ctrl+S 保存 · Ctrl+/ 源碼 · Ctrl+Shift+L 側欄 · Ctrl+P 快速打開 · Ctrl+F 查找 · Ctrl+Z 撤消"
+  },
+  "墨简更新记录": {
+    "en": "Inkslip Release Notes",
+    "zh-TW": "墨簡更新記錄"
+  },
+  "复制 / 粘贴为…": {
+    "en": "Copy / Paste As…",
+    "zh-TW": "復制 / 粘貼為…"
+  },
+  "复制到": {
+    "en": "Copy to",
+    "zh-TW": "復制到"
+  },
+  "复制图片到文件夹…": {
+    "en": "Copy Image to Folder…",
+    "zh-TW": "復制圖片到文件夾…"
+  },
+  "复制图片地址": {
+    "en": "Copy Image Address",
+    "zh-TW": "復制圖片地址"
+  },
+  "复制所有图片到…": {
+    "en": "Copy All Images to…",
+    "zh-TW": "復制所有圖片到…"
+  },
+  "外观设置无效。": {
+    "en": "Invalid appearance settings.",
+    "zh-TW": "外觀設置無效。"
+  },
+  "字号": {
+    "en": "Font size",
+    "zh-TW": "字號"
+  },
+  "字号设置无效。": {
+    "en": "Invalid font size settings.",
+    "zh-TW": "字號設置無效。"
+  },
+  "字数统计设置无效。": {
+    "en": "Invalid word count settings.",
+    "zh-TW": "字數統計設置無效。"
+  },
+  "对齐方式": {
+    "en": "Alignment",
+    "zh-TW": "對齊方式"
+  },
+  "导入…　docx/wiki/rst/org/…": {
+    "en": "Import…　docx/wiki/rst/org/…",
+    "zh-TW": "導入…　docx/wiki/rst/org/…"
+  },
+  "导入文件不能覆盖原文件": {
+    "en": "An import cannot overwrite the original file",
+    "zh-TW": "導入文件不能覆蓋原文件"
+  },
+  "导入输出文件必须为 .md": {
+    "en": "Imported output must use the .md extension",
+    "zh-TW": "導入輸出文件必須為 .md"
+  },
+  "导出内容必须为 Markdown 文本": {
+    "en": "Export content must be Markdown text",
+    "zh-TW": "導出內容必須為 Markdown 文本"
+  },
+  "将删除这张图片的磁盘文件并移除文中图片。会检查当前文档目录及子目录的共享引用，其他目录中的引用无法自动检查。继续？": {
+    "en": "Delete this image file from disk and remove it from the document? Shared references in the document folder and its subfolders will be checked. References outside this folder cannot be checked.",
+    "zh-TW": "將刪除這張圖片的磁盤文件并移除文中圖片。會檢查當前文檔目錄及子目錄的共享引用，其他目錄中的引用無法自動檢查。繼續？"
+  },
+  "尚未保存": {
+    "en": "Not saved",
+    "zh-TW": "尚未保存"
+  },
+  "尚未打开文件夹": {
+    "en": "No folder open",
+    "zh-TW": "尚未打開文件夾"
+  },
+  "居中": {
+    "en": "Center",
+    "zh-TW": "居中"
+  },
+  "展开替换": {
+    "en": "Expand replacement",
+    "zh-TW": "展開替換"
+  },
+  "已保存　✓": {
+    "en": "Saved　✓",
+    "zh-TW": "已保存　✓"
+  },
+  "已保存到本地": {
+    "en": "Saved locally",
+    "zh-TW": "已保存到本地"
+  },
+  "已发送到打印机": {
+    "en": "Sent to printer",
+    "zh-TW": "已發送到打印機"
+  },
+  "帮助示例：examples/完整Markdown示例.md": {
+    "en": "Example: examples/完整Markdown示例.md",
+    "zh-TW": "幫助示例：examples/完整Markdown示例.md"
+  },
+  "应用菜单": {
+    "en": "Application menu",
+    "zh-TW": "應用菜單"
+  },
+  "开源组件许可证": {
+    "en": "Open Source Licenses",
+    "zh-TW": "開源組件許可證"
+  },
+  "引用与列表": {
+    "en": "Quotes and lists",
+    "zh-TW": "引用與列表"
+  },
+  "当前文档尚未保存。": {
+    "en": "The current document has not been saved.",
+    "zh-TW": "當前文檔尚未保存。"
+  },
+  "当前文档尚未保存。放弃修改并新建文档？": {
+    "en": "The current document has unsaved changes. Discard changes and create a new document?",
+    "zh-TW": "當前文檔尚未保存。放棄修改并新建文檔？"
+  },
+  "当前文档目录及子目录": {
+    "en": "Document folder and subfolders",
+    "zh-TW": "當前文檔目錄及子目錄"
+  },
+  "当前版本使用手动保存，尚未提供自动保存、版本历史与恢复设置。": {
+    "en": "This version uses manual saving. Autosave, version history and recovery settings are not available.",
+    "zh-TW": "當前版本使用手動保存，尚未提供自動保存、版本歷史與恢復設置。"
+  },
+  "当前版本尚未接入 Pandoc，也未提供导出专用主题、页眉页脚或逐文件 YAML 导出配置。": {
+    "en": "This version does not yet support Pandoc, export themes, headers and footers, or per-document YAML export settings.",
+    "zh-TW": "當前版本尚未接入 Pandoc，也未提供導出專用主題、頁眉頁腳或逐文件 YAML 導出配置。"
+  },
+  "当前版本统一启用受支持的语法，尚未提供逐项语法开关、智能标点与自动配对设置。": {
+    "en": "Supported syntax is enabled by default. Individual syntax switches, smart punctuation and auto pairing are not yet available.",
+    "zh-TW": "當前版本統一啟用受支持的語法，尚未提供逐項語法開關、智能標點與自動配對設置。"
+  },
+  "快速打开…": {
+    "en": "Quick Open…",
+    "zh-TW": "快速打開…"
+  },
+  "快（382 词每分钟）": {
+    "en": "Fast (382 words per minute)",
+    "zh-TW": "快（382 詞每分鐘）"
+  },
+  "慢（120 词每分钟）": {
+    "en": "Slow (120 words per minute)",
+    "zh-TW": "慢（120 詞每分鐘）"
+  },
+  "所选内容": {
+    "en": "Selection",
+    "zh-TW": "所選內容"
+  },
+  "打印…": {
+    "en": "Print…",
+    "zh-TW": "打印…"
+  },
+  "打开图片…": {
+    "en": "Open Image…",
+    "zh-TW": "打開圖片…"
+  },
+  "打开图片位置…": {
+    "en": "Show Image in Folder…",
+    "zh-TW": "打開圖片位置…"
+  },
+  "打开文件菜单": {
+    "en": "Open file menu",
+    "zh-TW": "打開文件菜單"
+  },
+  "扩展语法设置": {
+    "en": "Extended syntax settings",
+    "zh-TW": "擴展語法設置"
+  },
+  "找不到此文档的图片操作记录。": {
+    "en": "No image operation record was found for this document.",
+    "zh-TW": "找不到此文檔的圖片操作記錄。"
+  },
+  "按住 Ctrl 时使用鼠标滑轮缩放": {
+    "en": "Hold Ctrl and use the mouse wheel to zoom",
+    "zh-TW": "按住 Ctrl 時使用鼠標滑輪縮放"
+  },
+  "按修改时间排序": {
+    "en": "Sort by Modified Time",
+    "zh-TW": "按修改時間排序"
+  },
+  "按创建时间排序": {
+    "en": "Sort by Creation Time",
+    "zh-TW": "按創建時間排序"
+  },
+  "按文件名排序": {
+    "en": "Sort by Filename",
+    "zh-TW": "按文件名排序"
+  },
+  "排版": {
+    "en": "Typography",
+    "zh-TW": "排版"
+  },
+  "提示内容": {
+    "en": "Note content",
+    "zh-TW": "提示內容"
+  },
+  "插入图片…": {
+    "en": "Insert Image…",
+    "zh-TW": "插入圖片…"
+  },
+  "插入图片时…": {
+    "en": "When inserting images…",
+    "zh-TW": "插入圖片時…"
+  },
+  "插入图片时的默认行为": {
+    "en": "Default behavior when inserting images",
+    "zh-TW": "插入圖片時的默認行為"
+  },
+  "插入本地图片…": {
+    "en": "Insert Local Image…",
+    "zh-TW": "插入本地圖片…"
+  },
+  "插入表格…": {
+    "en": "Insert Table…",
+    "zh-TW": "插入表格…"
+  },
+  "搜索中…": {
+    "en": "Searching…",
+    "zh-TW": "搜索中…"
+  },
+  "搜索偏好设置": {
+    "en": "Search preferences",
+    "zh-TW": "搜索偏好設置"
+  },
+  "搜索文件夹": {
+    "en": "Search folder",
+    "zh-TW": "搜索文件夾"
+  },
+  "搜索最近文件": {
+    "en": "Search recent files",
+    "zh-TW": "搜索最近文件"
+  },
+  "搜索最近文件或已打开文件夹": {
+    "en": "Search recent files or the open folder",
+    "zh-TW": "搜索最近文件或已打開文件夾"
+  },
+  "收起替换": {
+    "en": "Collapse replacement",
+    "zh-TW": "收起替換"
+  },
+  "放弃更改后，这些内容将无法恢复。": {
+    "en": "Discarded changes cannot be recovered.",
+    "zh-TW": "放棄更改后，這些內容將無法恢復。"
+  },
+  "数学公式已刷新": {
+    "en": "Math refreshed",
+    "zh-TW": "數學公式已刷新"
+  },
+  "文件侧栏": {
+    "en": "File sidebar",
+    "zh-TW": "文件側欄"
+  },
+  "文件夹操作": {
+    "en": "Folder actions",
+    "zh-TW": "文件夾操作"
+  },
+  "文件夹菜单": {
+    "en": "Folder menu",
+    "zh-TW": "文件夾菜單"
+  },
+  "文件操作": {
+    "en": "File actions",
+    "zh-TW": "文件操作"
+  },
+  "文件操作正在进行，请稍后重试。": {
+    "en": "A file operation is in progress. Please try again later.",
+    "zh-TW": "文件操作正在進行，請稍后重試。"
+  },
+  "文件菜单": {
+    "en": "File menu",
+    "zh-TW": "文件菜單"
+  },
+  "文末": {
+    "en": "End of Document",
+    "zh-TW": "文末"
+  },
+  "文档名.assets": {
+    "en": "document.assets",
+    "zh-TW": "文檔名.assets"
+  },
+  "文档导航": {
+    "en": "Document navigation",
+    "zh-TW": "文檔導航"
+  },
+  "文档已包含 YAML 头信息": {
+    "en": "The document already contains YAML front matter",
+    "zh-TW": "文檔已包含 YAML 頭信息"
+  },
+  "文档已变化，图片文件回滚失败": {
+    "en": "The document changed and the image file rollback failed",
+    "zh-TW": "文檔已變化，圖片文件回滾失敗"
+  },
+  "文档已变化，图片文件操作已回滚，请重试": {
+    "en": "The document changed. The image file operation was rolled back. Please try again",
+    "zh-TW": "文檔已變化，圖片文件操作已回滾，請重試"
+  },
+  "文档已变化，请重新粘贴图片": {
+    "en": "The document changed. Paste the image again",
+    "zh-TW": "文檔已變化，請重新粘貼圖片"
+  },
+  "文档已变化，请重新选择图片": {
+    "en": "The document changed. Select the image again",
+    "zh-TW": "文檔已變化，請重新選擇圖片"
+  },
+  "文档已打开": {
+    "en": "Document opened",
+    "zh-TW": "文檔已打開"
+  },
+  "文档正文": {
+    "en": "Document content",
+    "zh-TW": "文檔正文"
+  },
+  "文档统计": {
+    "en": "Document statistics",
+    "zh-TW": "文檔統計"
+  },
+  "文章大纲": {
+    "en": "Document outline",
+    "zh-TW": "文章大綱"
+  },
+  "文首": {
+    "en": "Start of Document",
+    "zh-TW": "文首"
+  },
+  "斜体文字": {
+    "en": "Italic text",
+    "zh-TW": "斜體文字"
+  },
+  "新文件名称": {
+    "en": "New filename",
+    "zh-TW": "新文件名稱"
+  },
+  "新文件夹名称": {
+    "en": "New folder name",
+    "zh-TW": "新文件夾名稱"
+  },
+  "无效的主题文件名": {
+    "en": "Invalid theme filename",
+    "zh-TW": "無效的主題文件名"
+  },
+  "无效的最近位置操作。": {
+    "en": "Invalid recent location action.",
+    "zh-TW": "無效的最近位置操作。"
+  },
+  "无效的窗口请求。": {
+    "en": "Invalid window request.",
+    "zh-TW": "無效的窗口請求。"
+  },
+  "无效表达式": {
+    "en": "Invalid expression",
+    "zh-TW": "無效表達式"
+  },
+  "无标题": {
+    "en": "Untitled",
+    "zh-TW": "無標題"
+  },
+  "无法复制图片": {
+    "en": "Unable to copy image",
+    "zh-TW": "無法復制圖片"
+  },
+  "无法读取文件夹": {
+    "en": "Unable to read folder",
+    "zh-TW": "無法讀取文件夾"
+  },
+  "无法连接 PicGo。请启动 PicGo 并开启 PicGo-Server，检查服务地址。": {
+    "en": "Cannot connect to PicGo. Start PicGo, enable PicGo-Server and check the server address.",
+    "zh-TW": "無法連接 PicGo。請啟動 PicGo 并開啟 PicGo-Server，檢查服務地址。"
+  },
+  "显式换行": {
+    "en": "Explicit line breaks",
+    "zh-TW": "顯式換行"
+  },
+  "显示侧栏": {
+    "en": "Show sidebar",
+    "zh-TW": "顯示側欄"
+  },
+  "显示侧边栏": {
+    "en": "Show Sidebar",
+    "zh-TW": "顯示側邊欄"
+  },
+  "显示文字": {
+    "en": "Display text",
+    "zh-TW": "顯示文字"
+  },
+  "暂不支持此内嵌图片格式。": {
+    "en": "This embedded image format is not supported yet.",
+    "zh-TW": "暫不支持此內嵌圖片格式。"
+  },
+  "替代文字": {
+    "en": "Alternative text",
+    "zh-TW": "替代文字"
+  },
+  "最大化": {
+    "en": "Maximize",
+    "zh-TW": "最大化"
+  },
+  "最近文件": {
+    "en": "Recent Files",
+    "zh-TW": "最近文件"
+  },
+  "最近文件操作": {
+    "en": "Recent file actions",
+    "zh-TW": "最近文件操作"
+  },
+  "最近文件由实际打开记录动态生成": {
+    "en": "Recent files are generated from opened documents",
+    "zh-TW": "最近文件由實際打開記錄動態生成"
+  },
+  "有尚未保存的更改": {
+    "en": "There are unsaved changes",
+    "zh-TW": "有尚未保存的更改"
+  },
+  "有未保存的修改": {
+    "en": "Unsaved changes",
+    "zh-TW": "有未保存的修改"
+  },
+  "服务地址": {
+    "en": "Server address",
+    "zh-TW": "服務地址"
+  },
+  "未命名.md": {
+    "en": "Untitled.md",
+    "zh-TW": "未命名.md"
+  },
+  "未找到 Pandoc。请安装 Pandoc，或在偏好设置中指定 pandoc.exe 路径。": {
+    "en": "Pandoc was not found. Install it or specify the pandoc.exe path in Preferences.",
+    "zh-TW": "未找到 Pandoc。請安裝 Pandoc，或在偏好設置中指定 pandoc.exe 路徑。"
+  },
+  "未转换图片语法：请检查图片原文，带尺寸或样式的 HTML 图片需保留 HTML 语法。": {
+    "en": "Image syntax was not converted. Check the source; HTML images with size or style attributes must retain HTML syntax.",
+    "zh-TW": "未轉換圖片語法：請檢查圖片原文，帶尺寸或樣式的 HTML 圖片需保留 HTML 語法。"
+  },
+  "查找大纲": {
+    "en": "Find in outline",
+    "zh-TW": "查找大綱"
+  },
+  "标题、列表、任务列表、引用、表格、代码、图片与链接，以及脚注、定义列表、目录、上下标、高亮、emoji、数学公式和 Mermaid 图表已启用。": {
+    "en": "Headings, lists, tasks, quotes, tables, code, images, links, footnotes, definition lists, table of contents, subscript, superscript, highlighting, emoji, math and Mermaid diagrams are enabled.",
+    "zh-TW": "標題、列表、任務列表、引用、表格、代碼、圖片與鏈接，以及腳注、定義列表、目錄、上下標、高亮、emoji、數學公式和 Mermaid 圖表已啟用。"
+  },
+  "样式": {
+    "en": "Style",
+    "zh-TW": "樣式"
+  },
+  "桌面版配置保存在应用的用户数据目录。PicGo 的图床密钥由 PicGo 管理，编辑器仅保存上传方式、服务地址和可执行文件路径。": {
+    "en": "Desktop settings are stored in the application's user data folder. PicGo manages image host credentials; the editor stores only the upload method, server address and executable path.",
+    "zh-TW": "桌面版配置保存在應用的用戶數據目錄。PicGo 的圖床密鑰由 PicGo 管理，編輯器僅保存上傳方式、服務地址和可執行文件路徑。"
+  },
+  "正在上传图片…": {
+    "en": "Uploading image…",
+    "zh-TW": "正在上傳圖片…"
+  },
+  "正在保存…": {
+    "en": "Saving…",
+    "zh-TW": "正在保存…"
+  },
+  "正在导入文档…": {
+    "en": "Importing document…",
+    "zh-TW": "正在導入文檔…"
+  },
+  "正在导入文档，请稍候": {
+    "en": "Importing document, please wait",
+    "zh-TW": "正在導入文檔，請稍候"
+  },
+  "正在通过 PicGo 上传图片…": {
+    "en": "Uploading images with PicGo…",
+    "zh-TW": "正在通過 PicGo 上傳圖片…"
+  },
+  "正文": {
+    "en": "Body",
+    "zh-TW": "正文"
+  },
+  "正文宽度": {
+    "en": "Body width",
+    "zh-TW": "正文寬度"
+  },
+  "正文行数": {
+    "en": "Body lines",
+    "zh-TW": "正文行數"
+  },
+  "段落（之前）": {
+    "en": "Paragraph (Before)",
+    "zh-TW": "段落（之前）"
+  },
+  "段落（之后）": {
+    "en": "Paragraph (After)",
+    "zh-TW": "段落（之后）"
+  },
+  "没有匹配的偏好设置。": {
+    "en": "No matching preferences.",
+    "zh-TW": "沒有匹配的偏好設置。"
+  },
+  "没有匹配的文件": {
+    "en": "No matching files",
+    "zh-TW": "沒有匹配的文件"
+  },
+  "没有可操作的图片": {
+    "en": "No images available",
+    "zh-TW": "沒有可操作的圖片"
+  },
+  "没有需要上传的本地图片": {
+    "en": "No local images to upload",
+    "zh-TW": "沒有需要上傳的本地圖片"
+  },
+  "浏览…": {
+    "en": "Browse…",
+    "zh-TW": "瀏覽…"
+  },
+  "深色模式下使用单独的主题": {
+    "en": "Use a separate theme in dark mode",
+    "zh-TW": "深色模式下使用單獨的主題"
+  },
+  "用于插入本地图片；有已保存文档时可计算相对路径。空格等字符转义为 %20，可提高 Markdown 兼容性。": {
+    "en": "For local images. Saved documents can use relative paths. Spaces and similar characters are escaped as %20 for Markdown compatibility.",
+    "zh-TW": "用于插入本地圖片；有已保存文檔時可計算相對路徑。空格等字符轉義為 %20，可提高 Markdown 兼容性。"
+  },
+  "用于非 Markdown 导入及 Word 导出，HTML / PDF 导出使用内置功能。": {
+    "en": "Used for non-Markdown imports and Word exports. HTML and PDF exports use built-in tools.",
+    "zh-TW": "用于非 Markdown 導入及 Word 導出，HTML / PDF 導出使用內置功能。"
+  },
+  "目标位置已有文件，未覆盖。": {
+    "en": "The destination already contains a file. It was not overwritten.",
+    "zh-TW": "目標位置已有文件，未覆蓋。"
+  },
+  "目标图片已被其他程序修改，未撤销磁盘操作。": {
+    "en": "The destination image was modified by another program. The file operation was not undone.",
+    "zh-TW": "目標圖片已被其他程序修改，未撤銷磁盤操作。"
+  },
+  "磁盘文件已被其他程序修改。请另存为（Ctrl+Shift+S）保留当前内容。": {
+    "en": "The file on disk was modified by another program. Use Save As (Ctrl+Shift+S) to keep the current content.",
+    "zh-TW": "磁盤文件已被其他程序修改。請另存為（Ctrl+Shift+S）保留當前內容。"
+  },
+  "离线词典；右键标记词可选择建议或加入用户词典。跳过代码和图片路径。": {
+    "en": "Offline dictionary. Right-click a marked word for suggestions or to add it to your dictionary. Code and image paths are skipped.",
+    "zh-TW": "離線詞典；右鍵標記詞可選擇建議或加入用戶詞典。跳過代碼和圖片路徑。"
+  },
+  "移动图片会删除原位置的文件并更新文中地址。会检查当前文档目录及子目录的共享引用，其他目录中的引用无法自动检查。继续？": {
+    "en": "Move image files and update their document URLs? Shared references in the document folder and its subfolders will be checked. References outside this folder cannot be checked.",
+    "zh-TW": "移動圖片會刪除原位置的文件并更新文中地址。會檢查當前文檔目錄及子目錄的共享引用，其他目錄中的引用無法自動檢查。繼續？"
+  },
+  "移动所有图片到…": {
+    "en": "Move All Images to…",
+    "zh-TW": "移動所有圖片到…"
+  },
+  "移除最近位置": {
+    "en": "Remove Recent Location",
+    "zh-TW": "移除最近位置"
+  },
+  "移除链接": {
+    "en": "Remove Link",
+    "zh-TW": "移除鏈接"
+  },
+  "窗口样式已保存，请重新启动应用以应用此设置。": {
+    "en": "Window style saved. Restart the application to apply it.",
+    "zh-TW": "窗口樣式已保存，請重新啟動應用以應用此設置。"
+  },
+  "简体中文": {
+    "en": "Simplified Chinese",
+    "zh-TW": "簡體中文"
+  },
+  "粗体文字": {
+    "en": "Bold text",
+    "zh-TW": "粗體文字"
+  },
+  "继续写作": {
+    "en": "Keep Writing",
+    "zh-TW": "繼續寫作"
+  },
+  "编辑图片": {
+    "en": "Edit Image",
+    "zh-TW": "編輯圖片"
+  },
+  "编辑图片…": {
+    "en": "Edit Image…",
+    "zh-TW": "編輯圖片…"
+  },
+  "编辑模式": {
+    "en": "Editing mode",
+    "zh-TW": "編輯模式"
+  },
+  "编辑设置无效。": {
+    "en": "Invalid editor settings.",
+    "zh-TW": "編輯設置無效。"
+  },
+  "编辑链接": {
+    "en": "Edit Link",
+    "zh-TW": "編輯鏈接"
+  },
+  "置顶": {
+    "en": "Always on Top",
+    "zh-TW": "置頂"
+  },
+  "脚注内容": {
+    "en": "Footnote content",
+    "zh-TW": "腳注內容"
+  },
+  "自动查找已安装的 Pandoc": {
+    "en": "Automatically detect installed Pandoc",
+    "zh-TW": "自動查找已安裝的 Pandoc"
+  },
+  "自定义字体大小": {
+    "en": "Custom font size",
+    "zh-TW": "自定義字體大小"
+  },
+  "自然排序": {
+    "en": "Natural sort",
+    "zh-TW": "自然排序"
+  },
+  "行 1，列 1": {
+    "en": "Line 1, Column 1",
+    "zh-TW": "行 1，列 1"
+  },
+  "行内": {
+    "en": "Inline",
+    "zh-TW": "行內"
+  },
+  "行内格式": {
+    "en": "Inline formatting",
+    "zh-TW": "行內格式"
+  },
+  "行尾": {
+    "en": "End of Line",
+    "zh-TW": "行尾"
+  },
+  "行距": {
+    "en": "Line spacing",
+    "zh-TW": "行距"
+  },
+  "行首": {
+    "en": "Start of Line",
+    "zh-TW": "行首"
+  },
+  "行高": {
+    "en": "Line height",
+    "zh-TW": "行高"
+  },
+  "让文字呈现自己的风格。": {
+    "en": "Give your words their own style.",
+    "zh-TW": "讓文字呈現自己的風格。"
+  },
+  "设置立即应用到编辑区和实时预览。窄窗口下内容宽度自动适应窗口。": {
+    "en": "Changes apply immediately to the editor and live preview. Content width adapts to narrow windows.",
+    "zh-TW": "設置立即應用到編輯區和實時預覽。窄窗口下內容寬度自動適應窗口。"
+  },
+  "语法支持": {
+    "en": "Syntax support",
+    "zh-TW": "語法支持"
+  },
+  "请使用桌面版上传图片": {
+    "en": "Use the desktop app to upload images",
+    "zh-TW": "請使用桌面版上傳圖片"
+  },
+  "请使用桌面版保存本地文件：npm start": {
+    "en": "Use the desktop app to save local files: npm start",
+    "zh-TW": "請使用桌面版保存本地文件：npm start"
+  },
+  "请使用桌面版导出或打印": {
+    "en": "Use the desktop app to export or print",
+    "zh-TW": "請使用桌面版導出或打印"
+  },
+  "请使用桌面版打开文件夹": {
+    "en": "Use the desktop app to open folders",
+    "zh-TW": "請使用桌面版打開文件夾"
+  },
+  "请使用桌面版打开本地文件：npm start": {
+    "en": "Use the desktop app to open local files: npm start",
+    "zh-TW": "請使用桌面版打開本地文件：npm start"
+  },
+  "请使用桌面版操作图片文件": {
+    "en": "Use the desktop app for image file operations",
+    "zh-TW": "請使用桌面版操作圖片文件"
+  },
+  "请先保存文档，以解析相对图片路径。": {
+    "en": "Save the document first to resolve relative image paths.",
+    "zh-TW": "請先保存文檔，以解析相對圖片路徑。"
+  },
+  "请先打开文件夹。": {
+    "en": "Open a folder first.",
+    "zh-TW": "請先打開文件夾。"
+  },
+  "请在桌面版中验证图片上传": {
+    "en": "Verify image uploading in the desktop app",
+    "zh-TW": "請在桌面版中驗證圖片上傳"
+  },
+  "请输入本机 PicGo 服务地址。": {
+    "en": "Enter a local PicGo server address.",
+    "zh-TW": "請輸入本機 PicGo 服務地址。"
+  },
+  "请选择 PicGo 应用的完整 .exe 路径。": {
+    "en": "Select the full path to the PicGo .exe file.",
+    "zh-TW": "請選擇 PicGo 應用的完整 .exe 路徑。"
+  },
+  "请选择 PicGo-Core 的完整 .exe 或 .js 路径。": {
+    "en": "Select the full path to the PicGo-Core .exe or .js file.",
+    "zh-TW": "請選擇 PicGo-Core 的完整 .exe 或 .js 路徑。"
+  },
+  "请选择图片目标文件夹。": {
+    "en": "Select a destination folder for images.",
+    "zh-TW": "請選擇圖片目標文件夾。"
+  },
+  "请选择支持的本地图片文件。": {
+    "en": "Select a supported local image file.",
+    "zh-TW": "請選擇支持的本地圖片文件。"
+  },
+  "请选择最近位置中的文件夹。": {
+    "en": "Select a folder from recent locations.",
+    "zh-TW": "請選擇最近位置中的文件夾。"
+  },
+  "请选择测试图片…": {
+    "en": "Select a test image…",
+    "zh-TW": "請選擇測試圖片…"
+  },
+  "调整缩进": {
+    "en": "Indentation",
+    "zh-TW": "調整縮進"
+  },
+  "超链接…": {
+    "en": "Hyperlink…",
+    "zh-TW": "超鏈接…"
+  },
+  "返回编辑器": {
+    "en": "Back to Editor",
+    "zh-TW": "返回編輯器"
+  },
+  "还原窗口": {
+    "en": "Restore Window",
+    "zh-TW": "還原窗口"
+  },
+  "连续文本中的普通回车显示换行；空行用于分段。无需在行尾额外输入两个空格。": {
+    "en": "Ordinary line breaks remain visible. Empty lines separate paragraphs; no trailing spaces are required.",
+    "zh-TW": "連續文本中的普通回車顯示換行；空行用于分段。無需在行尾額外輸入兩個空格。"
+  },
+  "退出源代码模式 · Ctrl+/": {
+    "en": "Exit source mode · Ctrl+/",
+    "zh-TW": "退出源代碼模式 · Ctrl+/"
+  },
+  "适应编辑区": {
+    "en": "Fit Editor",
+    "zh-TW": "適應編輯區"
+  },
+  "选中内容": {
+    "en": "Selected Content",
+    "zh-TW": "選中內容"
+  },
+  "选择 Pandoc…": {
+    "en": "Select Pandoc…",
+    "zh-TW": "選擇 Pandoc…"
+  },
+  "选择 PicGo 可执行文件": {
+    "en": "Select PicGo Executable",
+    "zh-TW": "選擇 PicGo 可執行文件"
+  },
+  "选择 PicGo-Core 的可执行文件。图床和认证信息由 PicGo 自身的配置管理。": {
+    "en": "Select the PicGo-Core executable. Image host settings and credentials are managed by PicGo.",
+    "zh-TW": "選擇 PicGo-Core 的可執行文件。圖床和認證信息由 PicGo 自身的配置管理。"
+  },
+  "选择代码块": {
+    "en": "Select Code Block",
+    "zh-TW": "選擇代碼塊"
+  },
+  "选择图片失败": {
+    "en": "Image selection failed",
+    "zh-TW": "選擇圖片失敗"
+  },
+  "选择文件夹…": {
+    "en": "Select Folder…",
+    "zh-TW": "選擇文件夾…"
+  },
+  "选择表格": {
+    "en": "Select Table",
+    "zh-TW": "選擇表格"
+  },
+  "通过“文件 → 导出”生成 HTML 或 PDF。HTML 会嵌入本地图片；PDF 使用系统打印排版。": {
+    "en": "Use File → Export to generate HTML or PDF. HTML embeds local images; PDF uses system print layout.",
+    "zh-TW": "通過“文件 → 導出”生成 HTML 或 PDF。HTML 會嵌入本地圖片；PDF 使用系統打印排版。"
+  },
+  "通过“文件 → 打印”选择打印机及纸张。": {
+    "en": "Use File → Print to choose a printer and paper size.",
+    "zh-TW": "通過“文件 → 打印”選擇打印機及紙張。"
+  },
+  "通过“文件 → 打开文件夹”浏览文件树；侧栏可切换文件列表和大纲，查找与替换位于编辑区上方。": {
+    "en": "Use File → Open Folder to browse files. The sidebar shows files or the outline; Find and Replace appear above the editor.",
+    "zh-TW": "通過“文件 → 打開文件夾”瀏覽文件樹；側欄可切換文件列表和大綱，查找與替換位于編輯區上方。"
+  },
+  "重启应用后生效。": {
+    "en": "Takes effect after restarting the application.",
+    "zh-TW": "重啟應用后生效。"
+  },
+  "重命名 / 移动图片到…": {
+    "en": "Rename / Move Image to…",
+    "zh-TW": "重命名 / 移動圖片到…"
+  },
+  "重命名/移动到…": {
+    "en": "Rename / Move to…",
+    "zh-TW": "重命名/移動到…"
+  },
+  "重命名…": {
+    "en": "Rename…",
+    "zh-TW": "重命名…"
+  },
+  "重新加载主题": {
+    "en": "Reload Themes",
+    "zh-TW": "重新加載主題"
+  },
+  "链接": {
+    "en": "Link",
+    "zh-TW": "鏈接"
+  },
+  "链接地址": {
+    "en": "Link address",
+    "zh-TW": "鏈接地址"
+  },
+  "键盘快捷键": {
+    "en": "Keyboard Shortcuts",
+    "zh-TW": "鍵盤快捷鍵"
+  },
+  "阅读速度须为 1 到 999 词每分钟。": {
+    "en": "Reading speed must be between 1 and 999 words per minute.",
+    "zh-TW": "閱讀速度須為 1 到 999 詞每分鐘。"
+  },
+  "阅读速度预设": {
+    "en": "Reading speed preset",
+    "zh-TW": "閱讀速度預設"
+  },
+  "隐藏侧边栏": {
+    "en": "Hide Sidebar",
+    "zh-TW": "隱藏側邊欄"
+  },
+  "验证已取消": {
+    "en": "Verification cancelled",
+    "zh-TW": "驗證已取消"
+  },
+  "验证时将先选择一张测试图片，再通过当前服务上传。验证不会修改当前文档。": {
+    "en": "Verification first uploads a test image through the current service. It does not modify the current document.",
+    "zh-TW": "驗證時將先選擇一張測試圖片，再通過當前服務上傳。驗證不會修改當前文檔。"
+  },
+  "默认行为": {
+    "en": "Default behavior",
+    "zh-TW": "默認行為"
+  },
+  "（无最近文件）": {
+    "en": "(No Recent Files)",
+    "zh-TW": "（無最近文件）"
+  },
+  "墨简": {
+    "en": "Inkslip",
+    "zh-TW": "墨簡"
+  },
+  "跟随系统": {
+    "en": "System Language",
+    "zh-TW": "跟隨系統"
+  },
+  "繁體中文": {
+    "en": "Traditional Chinese",
+    "zh-TW": "繁體中文"
+  },
+  "语言设置无效。": {
+    "en": "Invalid language setting.",
+    "zh-TW": "語言設定無效。"
+  },
+  "界面语言": {
+    "en": "Interface language",
+    "zh-TW": "介面語言"
+  },
+  "立即生效，不修改文档内容。": {
+    "en": "Applies immediately without changing document content.",
+    "zh-TW": "立即生效，不修改文件內容。"
+  },
+  "{0} 字符": {
+    "en": "{0} characters",
+    "zh-TW": "{0} 字符"
+  },
+  "{0} 行": {
+    "en": "{0} lines",
+    "zh-TW": "{0} 行"
+  },
+  "{0} 分钟": {
+    "en": "{0} minutes",
+    "zh-TW": "{0} 分鐘"
+  },
+  "{0} 词": {
+    "en": "{0} words",
+    "zh-TW": "{0} 詞"
+  },
+  "行 {0}，列 {1}": {
+    "en": "Line {0}, Column {1}",
+    "zh-TW": "行 {0}，列 {1}"
+  },
+  "{0} 个文件，{1} 处匹配": {
+    "en": "{0} files, {1} matches",
+    "zh-TW": "{0} 個文件，{1} 處匹配"
+  },
+  "{0}（降序）": {
+    "en": "{0} (Descending)",
+    "zh-TW": "{0}（降序）"
+  },
+  "{0}（升序）": {
+    "en": "{0} (Ascending)",
+    "zh-TW": "{0}（升序）"
+  },
+  "标题 {0}": {
+    "en": "Heading {0}",
+    "zh-TW": "標題 {0}"
+  },
+  "列 {0}": {
+    "en": "Column {0}",
+    "zh-TW": "列 {0}"
+  },
+  "保存失败：{0}": {
+    "en": "Save failed: {0}",
+    "zh-TW": "保存失敗：{0}"
+  },
+  "打开失败：{0}": {
+    "en": "Open failed: {0}",
+    "zh-TW": "打開失敗：{0}"
+  },
+  "偏好设置保存失败：{0}": {
+    "en": "Could not save preferences: {0}",
+    "zh-TW": "偏好設置保存失敗：{0}"
+  },
+  "读取偏好设置失败：{0}": {
+    "en": "Could not load preferences: {0}",
+    "zh-TW": "讀取偏好設置失敗：{0}"
+  },
+  "主题不存在：{0}": {
+    "en": "Theme not found: {0}",
+    "zh-TW": "主題不存在：{0}"
+  },
+  "主题加载失败：{0}": {
+    "en": "Could not load theme: {0}",
+    "zh-TW": "主題加載失敗：{0}"
+  },
+  "已导出：{0}": {
+    "en": "Exported: {0}",
+    "zh-TW": "已導出：{0}"
+  },
+  "Word 已导出，提示：{0}": {
+    "en": "Word exported with warnings: {0}",
+    "zh-TW": "Word 已導出，提示：{0}"
+  },
+  "Pandoc 转换失败 ({0})：{1}": {
+    "en": "Pandoc conversion failed ({0}): {1}",
+    "zh-TW": "Pandoc 轉換失敗 ({0})：{1}"
+  },
+  "PicGo 上传失败（HTTP {0}）。": {
+    "en": "PicGo upload failed (HTTP {0}).",
+    "zh-TW": "PicGo 上傳失敗（HTTP {0}）。"
+  },
+  "下载图片失败（HTTP {0}）。": {
+    "en": "Image download failed (HTTP {0}).",
+    "zh-TW": "下載圖片失敗（HTTP {0}）。"
+  },
+  "图表语法错误：{0}": {
+    "en": "Diagram syntax error: {0}",
+    "zh-TW": "圖表語法錯誤：{0}"
+  },
+  "应用窗口设置失败：{0}": {
+    "en": "Could not apply window settings: {0}",
+    "zh-TW": "應用窗口設置失敗：{0}"
+  },
+  "拼写建议加载失败：{0}": {
+    "en": "Could not load spelling suggestions: {0}",
+    "zh-TW": "拼寫建議加載失敗：{0}"
+  },
+  "拼写检查失败：{0}": {
+    "en": "Spell checking failed: {0}",
+    "zh-TW": "拼寫檢查失敗：{0}"
+  },
+  "粘贴图片失败：{0}": {
+    "en": "Could not paste image: {0}",
+    "zh-TW": "粘貼圖片失敗：{0}"
+  },
+  "验证失败：{0}": {
+    "en": "Verification failed: {0}",
+    "zh-TW": "驗證失敗：{0}"
+  },
+  "已上传 {0} 张本地图片并替换地址": {
+    "en": "Uploaded {0} local images and replaced their URLs",
+    "zh-TW": "已上傳 {0} 張本地圖片并替換地址"
+  },
+  "已移动 {0} 张图片并更新地址": {
+    "en": "Moved {0} images and updated their URLs",
+    "zh-TW": "已移動 {0} 張圖片并更新地址"
+  },
+  "已复制 {0} 张图片并更新地址": {
+    "en": "Copied {0} images and updated their URLs",
+    "zh-TW": "已復制 {0} 張圖片并更新地址"
+  },
+  "关于墨简 · Inkslip {0}": {
+    "en": "About Inkslip {0}",
+    "zh-TW": "關于墨簡 · Inkslip {0}"
+  },
+  "撤销 {0}": {
+    "en": "Undo {0}",
+    "zh-TW": "撤銷 {0}"
+  },
+  "字号超出允许范围。": {
+    "en": "Font size is out of range.",
+    "zh-TW": "字號超出允許范圍。"
+  },
+  "行距超出允许范围。": {
+    "en": "Line spacing is out of range.",
+    "zh-TW": "行距超出允許范圍。"
+  },
+  "正文宽度超出允许范围。": {
+    "en": "Body width is out of range.",
+    "zh-TW": "正文寬度超出允許范圍。"
+  },
+  "打开 Markdown 文档": {
+    "en": "Open Markdown Document",
+    "zh-TW": "打開 Markdown 文檔"
+  },
+  "保存 Markdown 文档": {
+    "en": "Save Markdown Document",
+    "zh-TW": "保存 Markdown 文檔"
+  },
+  "将文件移至回收站？": {
+    "en": "Move this file to the Recycle Bin?",
+    "zh-TW": "將文件移至回收站？"
+  },
+  "将文件夹移至回收站？": {
+    "en": "Move this folder to the Recycle Bin?",
+    "zh-TW": "將文件夾移至回收站？"
+  },
+  "将当前文档移至回收站？": {
+    "en": "Move the current document to the Recycle Bin?",
+    "zh-TW": "將當前文檔移至回收站？"
+  },
+  "选择 Pandoc": {
+    "en": "Select Pandoc",
+    "zh-TW": "選擇 Pandoc"
+  },
+  "选择图片文件夹": {
+    "en": "Select Image Folder",
+    "zh-TW": "選擇圖片文件夾"
+  },
+  "复制所有图片到": {
+    "en": "Copy All Images to",
+    "zh-TW": "復制所有圖片到"
+  },
+  "移动所有图片到": {
+    "en": "Move All Images to",
+    "zh-TW": "移動所有圖片到"
+  },
+  "导入文档": {
+    "en": "Import Document",
+    "zh-TW": "導入文檔"
+  },
+  "Pandoc 文档": {
+    "en": "Pandoc Documents",
+    "zh-TW": "Pandoc 文檔"
+  },
+  "保存导入的 Markdown 文档": {
+    "en": "Save Imported Markdown Document",
+    "zh-TW": "保存導入的 Markdown 文檔"
+  },
+  "导出 Word": {
+    "en": "Export Word",
+    "zh-TW": "導出 Word"
+  },
+  "重命名 / 移动文档": {
+    "en": "Rename / Move Document",
+    "zh-TW": "重命名 / 移動文檔"
+  },
+  "选择 PicGo-Core": {
+    "en": "Select PicGo-Core",
+    "zh-TW": "選擇 PicGo-Core"
+  },
+  "选择 PicGo 应用": {
+    "en": "Select PicGo Application",
+    "zh-TW": "選擇 PicGo 應用"
+  },
+  "选择一张测试图片（将上传至当前 PicGo 图床）": {
+    "en": "Select a test image (it will be uploaded to the current PicGo image host)",
+    "zh-TW": "選擇一張測試圖片（將上傳至當前 PicGo 圖床）"
+  },
+  "复制图片到": {
+    "en": "Copy Image to",
+    "zh-TW": "復制圖片到"
+  },
+  "重命名/移动图片到": {
+    "en": "Rename / Move Image to",
+    "zh-TW": "重命名/移動圖片到"
+  },
+  "导出 PDF": {
+    "en": "Export PDF",
+    "zh-TW": "導出 PDF"
+  },
+  "导出 HTML": {
+    "en": "Export HTML",
+    "zh-TW": "導出 HTML"
+  },
+  "正在上传图片，请等待完成。": {
+    "en": "An image is uploading. Please wait.",
+    "zh-TW": "正在上傳圖片，請等待完成。"
+  },
+  "已取消验证。": {
+    "en": "Verification cancelled.",
+    "zh-TW": "已取消驗證。"
+  },
+  "验证成功：{0}": {
+    "en": "Verification succeeded: {0}",
+    "zh-TW": "驗證成功：{0}"
+  },
+  "文档内容无效。": {
+    "en": "Invalid document content.",
+    "zh-TW": "文檔內容無效。"
+  },
+  "请先打开文档，或使用另存为。": {
+    "en": "Open a document first, or use Save As.",
+    "zh-TW": "請先打開文檔，或使用另存為。"
+  },
+  "文件已被其他程序修改。请另存为，或重新打开文件后再编辑。": {
+    "en": "The file was modified by another program. Use Save As, or reopen it before editing.",
+    "zh-TW": "文件已被其他程序修改。請另存為，或重新打開文件后再編輯。"
+  },
+  "请先保存或打开文档。": {
+    "en": "Save or open a document first.",
+    "zh-TW": "請先保存或打開文檔。"
+  },
+  "窗口设置无效": {
+    "en": "Invalid window settings",
+    "zh-TW": "窗口設置無效"
+  },
+  "导出文件不能覆盖当前 Markdown 文档。": {
+    "en": "The export cannot overwrite the current Markdown document.",
+    "zh-TW": "導出文件不能覆蓋當前 Markdown 文檔。"
+  },
+  "打印已取消。": {
+    "en": "Printing cancelled.",
+    "zh-TW": "打印已取消。"
+  },
+  "导出内容无效。": {
+    "en": "Invalid export content.",
+    "zh-TW": "導出內容無效。"
+  },
+  "未命名": {
+    "en": "Untitled",
+    "zh-TW": "未命名"
+  },
+  "折叠": {
+    "en": "Collapse",
+    "zh-TW": "折疊"
+  },
+  "展开": {
+    "en": "Expand",
+    "zh-TW": "展開"
+  },
+  "升序": {
+    "en": "Ascending",
+    "zh-TW": "升序"
+  },
+  "降序": {
+    "en": "Descending",
+    "zh-TW": "降序"
+  },
+  "图片加载失败：{0}": {
+    "en": "Could not load image: {0}",
+    "zh-TW": "圖片加載失敗：{0}"
+  },
+  "文件操作完成，文档已变化，请手动更新图片地址：{0}": {
+    "en": "File operation completed; the document changed. Update the image URL manually: {0}",
+    "zh-TW": "文件操作完成，文檔已變化，請手動更新圖片地址：{0}"
+  },
+  "墨简 {0}：修正段间距、鼠标选字与可见行移动；补齐提示块和引用定义显示；文件栏底部新增文件夹菜单、新建、搜索、刷新、排序、视图切换及最近位置管理。": {
+    "en": "Inkslip {0}: improved paragraph spacing, text selection and visual-line navigation; added alerts and reference definitions; expanded sidebar folder, search, sort, view and recent-location actions.",
+    "zh-TW": "墨簡 {0}：修正段間距、鼠標選字與可見行移動；補齊提示塊和引用定義顯示；文件欄底部新增文件夾菜單、新建、搜索、刷新、排序、視圖切換及最近位置管理。"
+  }
+}

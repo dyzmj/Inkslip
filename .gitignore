@@ -1,0 +1,55 @@
+# Dependencies and package-manager caches
+node_modules/
+/.npm/
+/.pnpm-cache/
+/.pnpm-store/
+
+# Generated builds and packaged applications
+/dist/
+/release/
+
+# Local investigation, generated notes, screenshots, reports and tests
+/evidence/
+/docs/
+/tests/
+/scripts/*
+!/scripts/generate-icon.mjs
+*.test.*
+*.spec.*
+*-test.json
+*-report.json
+*.tsbuildinfo
+
+# Test and tool caches
+/coverage/
+/.nyc_output/
+/test-results/
+/playwright-report/
+/.cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# Local configuration; keep shareable environment templates
+.env
+.env.*
+!.env.example
+!.env.*.example
+/.idea/
+/.vscode/
+
+# Logs, temporary files and operating-system metadata
+*.log
+*.log.*
+*.pid
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.dmp
+*.stackdump
+.DS_Store
+Thumbs.db
+Desktop.ini

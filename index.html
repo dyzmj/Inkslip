@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https: http: inkslip-image:; font-src 'self' data:; connect-src 'self' ws://127.0.0.1:*; object-src 'none'; base-uri 'none'" />
+    <title>墨简 · Inkslip</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <nav class="menubar" id="menubar" aria-label="应用菜单">
+        <button id="window-menu" aria-label="打开文件菜单" aria-expanded="false"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1 4h8M1 8h14M1 12h10"/></svg></button>
+        <span id="menu-document-title"><span id="file-name">未命名.md</span></span><div id="menu-items" role="menubar"></div>
+        <div id="window-controls" hidden>
+          <button data-window-action="minimize" aria-label="最小化"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M0 5.5h10"/></svg></button>
+          <button data-window-action="maximize" aria-label="最大化"><svg class="maximize-icon" viewBox="0 0 10 10" aria-hidden="true"><path d="M.5.5h9v9h-9Z"/></svg><svg class="restore-icon" viewBox="0 0 10 10" aria-hidden="true"><path d="M2.5 2.5v-2h7v7h-2M.5 2.5h7v7h-7Z"/></svg><svg class="unpin-icon" viewBox="0 0 10 10" aria-hidden="true"><path d="m4 0 5 5M5 1 2 5l3 3 4-3M3 7 0 10"/></svg></button>
+          <button data-window-action="close" aria-label="关闭窗口"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="m.5.5 9 9m0-9-9 9"/></svg></button>
+        </div>
+      </nav>
+      <div class="app-body">
+      <aside class="sidebar" aria-label="文档导航">
+        <div class="sidebar-tabs" role="tablist" aria-label="侧栏视图"><button id="tab-files" role="tab" aria-selected="false" aria-controls="panel-files">文件</button><button id="tab-outline" role="tab" aria-selected="true" aria-controls="panel-outline">大纲</button></div>
+        <section id="panel-files" class="sidebar-panel" role="tabpanel" aria-labelledby="tab-files" hidden><div id="folder-search" hidden><div class="folder-search-row"><input id="folder-search-input" type="search" placeholder="搜索文件夹" aria-label="搜索文件夹"><button id="folder-search-close" aria-label="关闭文件夹搜索">×</button></div><div id="folder-search-status" role="status"></div></div><div id="folder-empty"><div id="folder-path" class="folder-path">尚未打开文件夹</div><button id="folder-open">打开文件夹…</button></div><div id="file-tree" class="file-tree" role="tree"></div></section>
+        <section id="panel-outline" class="sidebar-panel" role="tabpanel" aria-labelledby="tab-outline"><div class="sidebar-caption">文章大纲 <span id="heading-count">0</span></div><nav class="outline" id="outline" aria-label="文章大纲"></nav></section>
+        <div id="sidebar-footer" class="sidebar-footer" hidden><button id="sidebar-new-file" aria-label="新建文件" title="新建文件"></button><button id="sidebar-menu" aria-label="文件夹菜单" aria-haspopup="menu" aria-expanded="false"><span id="sidebar-folder-label">打开文件夹…</span><span id="sidebar-more-icon"></span></button><button id="sidebar-switch-view" aria-label="切换为文件列表" title="切换为文件列表"></button><div id="sidebar-files-menu" role="menu" aria-label="文件夹操作" tabindex="-1" hidden></div></div>
+      </aside>
+      <main class="workspace">
+        <section class="document-scroll">
+          <div id="editor" aria-label="Markdown 编辑器"></div>
+        </section>
+      </main>
+      </div>
+      <footer class="statusbar"><div class="status-left"><button id="show-sidebar" title="隐藏侧边栏" aria-label="隐藏侧边栏" aria-pressed="true"><svg class="sidebar-closed-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/></svg><svg class="sidebar-open-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m10 3-5 5 5 5"/></svg></button><button id="mode-label" title="启用源代码模式" aria-label="启用源代码模式" aria-pressed="false"><i class="source-mode-icon" aria-hidden="true"></i><span id="source-exit-label" hidden>退出源代码模式</span></button><span class="status-dot" id="save-dot"></span><span id="save-state">尚未保存</span></div><div class="status-right"><span id="cursor-position" hidden>行 1，列 1</span><button id="word-count" title="文档统计">0 词</button></div></footer>
+    </div>
+    <div class="menu-popup" id="menu-popup" role="menu" hidden></div>
+    <div class="menu-popup context-menu" id="context-menu" role="menu" hidden></div>
+    <dialog id="command-dialog"><form method="dialog"><h2 id="dialog-title"></h2><div id="dialog-fields"></div><div class="dialog-actions"><button value="cancel">取消</button><button id="dialog-submit" value="ok" class="primary-button">确定</button></div></form></dialog>
+    <div class="toast" id="toast" role="status" hidden></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
