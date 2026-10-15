@@ -4,6 +4,7 @@ import { EditorView } from '@codemirror/view';
 import { Compartment, EditorState, StateEffect } from '@codemirror/state';
 import { createEditorCommands, getEditorContext, parseTable } from './editor-commands.js';
 import { renderDocument } from './markdown-renderer.js';
+import { createExportHtml } from './export-document.js';
 import DOMPurify from 'dompurify';
 import { installPreferences } from './preferences.js';
 import { t } from './i18n.js';
@@ -670,8 +671,7 @@ export function installWorkbench({ view, actions, desktop }) {
         if (!/^(https?:|data:)/i.test(source)) img.setAttribute('src', resolveImageSource(source, info.path, getImageRoot(view.state)));
       }
     }
-    const css = [...document.styleSheets].flatMap(sheet => { try { return [...sheet.cssRules].map(rule => rule.cssText); } catch { return []; } }).join('\n');
-    const html = `<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src file: data: https: http:; style-src 'unsafe-inline'; font-src file: data:"><style>${css}\nbody {overflow:visible;margin:40px;background:white;color:#333} .md-rendered {max-width:800px;margin:auto} pre {white-space:pre-wrap}</style></head><body><article class="md-rendered">${template.innerHTML}</article></body></html>`;
+    const html = createExportHtml(document, template.innerHTML);
     const result = await desktop?.exportDocument({ format, html });
     if (!result) actions.notify('请使用桌面版导出或打印');
     else if (result.status === 'error') actions.notify(result.message);

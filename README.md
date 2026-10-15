@@ -24,10 +24,10 @@ The file sidebar footer aligns with the editor status bar. File tree and file li
 
 ## Run the desktop app
 
-The current version is **0.8.0** for Windows x64, Mac Intel (x64), and Mac Apple Silicon (arm64). Launch:
+The current version is **0.8.1** for Windows x64, Mac Intel (x64), and Mac Apple Silicon (arm64). Launch:
 
 ```text
-release/0.8.0/Inkslip-win32-x64/Inkslip.exe
+release/0.8.1/Inkslip-win32-x64/Inkslip.exe
 ```
 
 Download the ZIP for your platform from [Releases](https://github.com/dyzmj/Inkslip/releases), then extract it. On macOS, move `Inkslip.app` to Applications.
@@ -99,6 +99,8 @@ Preferences include Classic/Unibody windows, automatic/custom font size, line he
 
 HTML, PDF, and printing work out of the box. Word export and document import require **Pandoc**; its executable path can also be set in Preferences.
 
+HTML, PDF, and printing preserve the active preview theme, including dark backgrounds, custom font size and line height, and user CSS overrides. Local theme fonts and background images are embedded in the exported document.
+
 Import converts documents into Markdown and extracts local media resources. The editor is temporarily locked during conversion. Word export supports tables and resolvable image resources. Mermaid diagrams remain code text in exported documents; check complex math fonts and pagination in the resulting output.
 
 ## Run from source
@@ -161,8 +163,8 @@ Every push to `main` and every pull request builds and launch-checks three packa
 To publish a version, update `package.json` and `package-lock.json`, commit, then push a matching version tag:
 
 ```bash
-git tag v0.8.0
-git push origin v0.8.0
+git tag v0.8.1
+git push origin v0.8.1
 ```
 
 The workflow waits for all three builds and desktop checks to pass, publishes the platform ZIPs as GitHub npm Packages, and creates a GitHub Release with the ZIPs and `SHA256SUMS.txt`. It uses the repository's built-in `GITHUB_TOKEN` with `contents: write` and `packages: write`; no npm.org token is required. The workflow can also be run manually, with publishing enabled if desired.

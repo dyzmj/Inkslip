@@ -664,6 +664,21 @@ async function exportHtml(html) {
     }
   }));
   for (const replacement of replacements) if (replacement) html = html.replace(replacement.from, replacement.to);
+  // A standalone export cannot depend on fonts or backgrounds inside the app.
+  const resources = new Map();
+  const types = { '.woff2': 'font/woff2', '.woff': 'font/woff', '.ttf': 'font/ttf', '.otf': 'font/otf', '.eot': 'application/vnd.ms-fontobject', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.gif': 'image/gif', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.bmp': 'image/bmp', '.avif': 'image/avif', '.ico': 'image/x-icon' };
+  for (const match of html.matchAll(/url\(\s*(?:"([^"]*)"|'([^']*)'|([^\s)]+))\s*\)/gi)) {
+    const source = match[1] ?? match[2] ?? match[3];
+    if (!/^file:/i.test(source) || resources.has(match[0])) continue;
+    const url = new URL(source);
+    const fragment = url.hash; url.hash = '';
+    const resourcePath = fileURLToPath(url);
+    const type = types[path.extname(resourcePath).toLowerCase()];
+    if (!type) continue;
+    const bytes = await fs.readFile(resourcePath);
+    resources.set(match[0], `url("data:${type};base64,${bytes.toString('base64')}${fragment}")`);
+  }
+  html = html.replace(/url\(\s*(?:"([^"]*)"|'([^']*)'|([^\s)]+))\s*\)/gi, match => resources.get(match) || match);
   return html;
 }
 

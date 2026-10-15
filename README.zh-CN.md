@@ -24,10 +24,10 @@
 
 ## 运行桌面版
 
-当前版本为 **0.8.0**，支持 Windows x64、Mac Intel（x64）和 Mac Apple Silicon（arm64）。双击：
+当前版本为 **0.8.1**，支持 Windows x64、Mac Intel（x64）和 Mac Apple Silicon（arm64）。双击：
 
 ```text
-release/0.8.0/Inkslip-win32-x64/Inkslip.exe
+release/0.8.1/Inkslip-win32-x64/Inkslip.exe
 ```
 
 从 [Releases](https://github.com/dyzmj/Inkslip/releases) 下载对应平台的 ZIP 并解压；macOS 将 `Inkslip.app` 放入“应用程序”。
@@ -101,6 +101,8 @@ inkslip-copy-images-to: ./assets
 
 HTML、PDF 和打印可以直接使用。Word 导出及文档导入需要安装 **Pandoc**，也可在偏好设置中指定 Pandoc 可执行文件路径。
 
+HTML、PDF 和打印沿用当前预览主题，包括深色背景、自定义字号、行高和用户 CSS 覆盖样式。本地主题字体和背景图片会嵌入导出文档。
+
 导入会转换为 Markdown，并提取本地媒体资源；导入期间暂时锁定编辑区。Word 导出支持表格及可解析的图片资源。Mermaid 在文档导出中保留代码文本，复杂公式字体和分页效果需自行检查。
 
 ## 从源码运行
@@ -163,8 +165,8 @@ npm run package:mac -- --arch=x64
 发布版本时，同步修改 `package.json` 和 `package-lock.json` 中的版本号并提交，再推送相同版本的标签：
 
 ```bash
-git tag v0.8.0
-git push origin v0.8.0
+git tag v0.8.1
+git push origin v0.8.1
 ```
 
 三个平台的构建和桌面检查全部成功后，工作流自动将平台 ZIP 封装为 GitHub npm Packages，并创建包含三个 ZIP 和 `SHA256SUMS.txt` 的 GitHub Release。使用仓库内置的 `GITHUB_TOKEN`，授予 `contents: write` 与 `packages: write`，无需 npm.org Token。也可以手动运行工作流并选择是否发布。

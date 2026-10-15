@@ -1,6 +1,6 @@
 {
   "name": "inkslip",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "private": true,
   "description": "A desktop Markdown editor for focused writing",
   "type": "module",
