@@ -17,6 +17,7 @@ Your documents stay on your computer as plain Markdown files. Organize them with
 - **Writing tools:** Focus mode, typewriter mode, document and selection statistics, offline English spell checking with context-menu suggestions, and automatic code indentation.
 - **Local file operations:** Create, save, save as, rename, duplicate, reopen with another encoding, and inspect file properties. External changes are checked before saving to avoid overwriting newer content on disk. Unicode paths and Windows line endings are supported.
 - **Import and export:** HTML, PDF, Word, and system printing. Install Pandoc to import additional document formats and export Word documents.
+- **Update checks:** Use **Help → Check for updates** or **Preferences → General → Software updates** to compare your version with the latest stable GitHub Release and download the ZIP for Windows, Mac Intel, or Mac Apple Silicon. Downloads open in your browser; extract the package and replace the app to install the update.
 
 Try the [complete Markdown example](examples/完整Markdown示例.md) to explore the supported syntax.
 
@@ -24,10 +25,10 @@ The file sidebar footer aligns with the editor status bar. File tree and file li
 
 ## Run the desktop app
 
-The current version is **0.8.1** for Windows x64, Mac Intel (x64), and Mac Apple Silicon (arm64). Launch:
+The current version is **0.8.2** for Windows x64, Mac Intel (x64), and Mac Apple Silicon (arm64). Launch:
 
 ```text
-release/0.8.1/Inkslip-win32-x64/Inkslip.exe
+release/0.8.2/Inkslip-win32-x64/Inkslip.exe
 ```
 
 Download the ZIP for your platform from [Releases](https://github.com/dyzmj/Inkslip/releases), then extract it. On macOS, move `Inkslip.app` to Applications.
@@ -163,8 +164,8 @@ Every push to `main` and every pull request builds and launch-checks three packa
 To publish a version, update `package.json` and `package-lock.json`, commit, then push a matching version tag:
 
 ```bash
-git tag v0.8.1
-git push origin v0.8.1
+git tag v0.8.2
+git push origin v0.8.2
 ```
 
 The workflow waits for all three builds and desktop checks to pass, publishes the platform ZIPs as GitHub npm Packages, and creates a GitHub Release with the ZIPs and `SHA256SUMS.txt`. It uses the repository's built-in `GITHUB_TOKEN` with `contents: write` and `packages: write`; no npm.org token is required. The workflow can also be run manually, with publishing enabled if desired.

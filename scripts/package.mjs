@@ -90,8 +90,22 @@ if (values.verify) {
       }
     }
     await page.locator('.preferences-close').click();
+    await app.evaluate(({ app, net, dialog }) => {
+      globalThis.originalUpdateFetch = net.fetch; globalThis.originalUpdateDialog = dialog.showMessageBox;
+      const version = app.getVersion();
+      net.fetch = async () => new Response(JSON.stringify({ tag_name: `v${version}`, html_url: `https://github.com/dyzmj/Inkslip/releases/tag/v${version}`, draft: false, prerelease: false, assets: [] }));
+      dialog.showMessageBox = async (_, options) => { globalThis.updateDialog = options; return { response: 0 }; };
+    });
+    try {
+      const result = await page.evaluate(() => window.desktop.checkForUpdates());
+      assert.equal(result.status, 'ok'); assert.equal(result.available, false); assert.equal(result.currentVersion, project.version);
+      assert.equal(await app.evaluate(() => globalThis.updateDialog.message), '当前已是最新版本');
+      assert.ok(await page.locator('[data-action="check-updates"]').count());
+    } finally {
+      await app.evaluate(({ net, dialog }) => { net.fetch = globalThis.originalUpdateFetch; dialog.showMessageBox = globalThis.originalUpdateDialog; });
+    }
     assert.deepEqual(errors, []);
-    console.log(`Verified ${platform}/${arch}: packaged startup, themes, table rendering, edit/save and three interface languages.`);
+    console.log(`Verified ${platform}/${arch}: packaged startup, themes, table rendering, edit/save, three interface languages and update checking.`);
   } finally {
     await app.evaluate(({ dialog }) => { dialog.showMessageBoxSync = () => 1; }).catch(() => {});
     await app.close();

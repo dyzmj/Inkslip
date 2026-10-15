@@ -17,6 +17,7 @@
 - **写作工具**：专注模式、打字机模式、字数及选区统计、英文拼写检查和右键纠错、代码自动缩进。
 - **本地文件操作**：新建、保存、另存为、重命名、复制、编码重开、文件属性；保存前检查外部修改，避免覆盖磁盘上的新内容。
 - **导入与导出**：HTML、PDF、Word 和系统打印；安装 Pandoc 后可导入其他文档格式。
+- **版本更新检测**：通过“帮助 → 检查更新”或“偏好设置 → 通用 → 软件更新”检查 GitHub 最新正式版，下载对应 Windows、Mac Intel 或 Mac Apple Silicon 的 ZIP。下载在浏览器中进行，解压并替换应用即可更新。
 
 可打开 [完整 Markdown 示例](examples/完整Markdown示例.md) 体验支持的语法。
 
@@ -24,10 +25,10 @@
 
 ## 运行桌面版
 
-当前版本为 **0.8.1**，支持 Windows x64、Mac Intel（x64）和 Mac Apple Silicon（arm64）。双击：
+当前版本为 **0.8.2**，支持 Windows x64、Mac Intel（x64）和 Mac Apple Silicon（arm64）。双击：
 
 ```text
-release/0.8.1/Inkslip-win32-x64/Inkslip.exe
+release/0.8.2/Inkslip-win32-x64/Inkslip.exe
 ```
 
 从 [Releases](https://github.com/dyzmj/Inkslip/releases) 下载对应平台的 ZIP 并解压；macOS 将 `Inkslip.app` 放入“应用程序”。
@@ -165,8 +166,8 @@ npm run package:mac -- --arch=x64
 发布版本时，同步修改 `package.json` 和 `package-lock.json` 中的版本号并提交，再推送相同版本的标签：
 
 ```bash
-git tag v0.8.1
-git push origin v0.8.1
+git tag v0.8.2
+git push origin v0.8.2
 ```
 
 三个平台的构建和桌面检查全部成功后，工作流自动将平台 ZIP 封装为 GitHub npm Packages，并创建包含三个 ZIP 和 `SHA256SUMS.txt` 的 GitHub Release。使用仓库内置的 `GITHUB_TOKEN`，授予 `contents: write` 与 `packages: write`，无需 npm.org Token。也可以手动运行工作流并选择是否发布。

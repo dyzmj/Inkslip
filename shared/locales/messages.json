@@ -2631,6 +2631,78 @@
     "en": "Quit Inkslip",
     "zh-TW": "結束墨簡"
   },
+  "软件更新": {
+    "en": "Software updates",
+    "zh-TW": "軟體更新"
+  },
+  "检查更新…": {
+    "en": "Check for updates…",
+    "zh-TW": "檢查更新…"
+  },
+  "检查更新": {
+    "en": "Check for updates",
+    "zh-TW": "檢查更新"
+  },
+  "正在检查更新…": {
+    "en": "Checking for updates…",
+    "zh-TW": "正在檢查更新…"
+  },
+  "当前版本：{0}": {
+    "en": "Current version: {0}",
+    "zh-TW": "目前版本：{0}"
+  },
+  "最新版本：{0}": {
+    "en": "Latest version: {0}",
+    "zh-TW": "最新版本：{0}"
+  },
+  "发现新版本": {
+    "en": "A new version is available",
+    "zh-TW": "發現新版本"
+  },
+  "当前已是最新版本": {
+    "en": "You are up to date",
+    "zh-TW": "目前已是最新版本"
+  },
+  "下载更新": {
+    "en": "Download update",
+    "zh-TW": "下載更新"
+  },
+  "查看发布页面": {
+    "en": "View release page",
+    "zh-TW": "查看發佈頁面"
+  },
+  "查看发布说明": {
+    "en": "View release notes",
+    "zh-TW": "查看發佈說明"
+  },
+  "稍后": {
+    "en": "Later",
+    "zh-TW": "稍後"
+  },
+  "下载后请解压并替换应用，文档和偏好设置会保留。": {
+    "en": "Extract the download and replace the application. Your documents and preferences will be preserved.",
+    "zh-TW": "下載後請解壓縮並替換應用程式，文件和偏好設定會保留。"
+  },
+  "从 GitHub Releases 检测新版本，选择下载后在浏览器中获取对应系统的软件包。": {
+    "en": "Check GitHub Releases for new versions and download the package for your system in your browser.",
+    "zh-TW": "從 GitHub Releases 檢查新版本，選擇下載後在瀏覽器中取得對應系統的軟體套件。"
+  },
+  "检查更新失败，请检查网络连接后重试。": {
+    "en": "Could not check for updates. Check your network connection and try again.",
+    "zh-TW": "檢查更新失敗，請檢查網路連線後重試。"
+  },
+  "GitHub 请求受限，请稍后重试。": {
+    "en": "GitHub has limited requests. Please try again later.",
+    "zh-TW": "GitHub 請求受限，請稍後重試。"
+  },
+  "尚无公开发布版本。": {
+    "en": "No public release is available yet.",
+    "zh-TW": "尚無公開發佈版本。"
+  },
+  "更新信息无效，请稍后重试。": {
+    "en": "The update information is invalid. Please try again later.",
+    "zh-TW": "更新資訊無效，請稍後重試。"
+  },
   "未找到 Pandoc。请安装 Pandoc，或在偏好设置中指定其可执行文件路径。": {
     "en": "Pandoc was not found. Install it or choose its executable in Preferences.",
     "zh-TW": "未找到 Pandoc。請安裝 Pandoc，或在偏好設定中指定其執行檔路徑。"

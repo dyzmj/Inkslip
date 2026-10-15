@@ -1,4 +1,4 @@
-const { app, BrowserWindow, clipboard, ClipboardItem, nativeImage, nativeTheme, dialog, ipcMain, Menu, protocol, shell } = require('electron');
+const { app, BrowserWindow, clipboard, ClipboardItem, nativeImage, nativeTheme, dialog, ipcMain, Menu, net, protocol, shell } = require('electron');
 const iconv = require('iconv-lite');
 const menuSpec = require('../shared/menu-spec.json');
 const { resolveLanguage, translate, translateDialog } = require('../shared/i18n.cjs');
@@ -11,6 +11,7 @@ const imageClipboard = require('./image-clipboard.cjs');
 const library = require('./library-service.cjs');
 const themeService = require('./theme-service.cjs');
 const converter = require('./document-converter.cjs');
+const updates = require('./update-service.cjs');
 const imageFiles = require('./image-file-operations.cjs').createImageFileOperations();
 const { createSpellService } = require('./spell-service.cjs');
 const { execFile } = require('node:child_process');
@@ -338,6 +339,31 @@ ipcMain.on('desktop:dirty', (event, value) => {
 ipcMain.handle('desktop:link', async (event, value) => {
   if (!trustedSender(event) || typeof value !== 'string' || !/^(https?:|mailto:)/i.test(value)) return;
   await shell.openExternal(value);
+});
+
+let updateCheck;
+ipcMain.handle('desktop:check-updates', async event => {
+  if (!trustedSender(event)) return { status: 'error', message: t('无效的窗口请求。') };
+  if (updateCheck) return updateCheck;
+  updateCheck = (async () => {
+    try {
+      const result = await updates.checkForUpdates({ currentVersion: app.getVersion(), platform: process.platform, arch: process.arch, fetch: (url, options) => net.fetch(url, options) });
+      if (!window || window.isDestroyed()) return { status: 'cancelled' };
+      const detail = [t(`当前版本：${result.currentVersion}`), t(`最新版本：${result.latestVersion}`), ...(result.available ? ['', t('下载后请解压并替换应用，文档和偏好设置会保留。')] : [])].join('\n');
+      const choice = await localizedDialog.showMessageBox(window, {
+        type: 'info', title: '检查更新', message: result.available ? '发现新版本' : '当前已是最新版本', detail,
+        buttons: result.available ? [result.downloadUrl ? '下载更新' : '查看发布页面', '查看发布说明', '稍后'] : ['确定'],
+        defaultId: 0, cancelId: result.available ? 2 : 0, noLink: true,
+      });
+      if (result.available && choice.response < 2) await shell.openExternal(choice.response === 0 ? result.downloadUrl || result.releaseUrl : result.releaseUrl);
+      return { status: 'ok', ...result };
+    } catch (error) {
+      if (window && !window.isDestroyed()) await localizedDialog.showMessageBox(window, { type: 'warning', title: '检查更新', message: error.message, buttons: ['确定'] });
+      return { status: 'error', message: t(error.message) };
+    }
+  })();
+  try { return await updateCheck; }
+  finally { updateCheck = null; }
 });
 
 

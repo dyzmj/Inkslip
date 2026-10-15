@@ -1122,6 +1122,10 @@
         "label": "墨简更新记录"
       },
       {
+        "id": "check-updates",
+        "label": "检查更新…"
+      },
+      {
         "type": "separator"
       },
       {

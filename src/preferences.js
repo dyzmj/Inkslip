@@ -1,6 +1,7 @@
 import './preferences.css';
 import { installThemes } from './themes.js';
 import { applyLanguage, languages } from './i18n.js';
+import { version } from '../package.json';
 
 const categories = [['files', '文件'], ['editor', '编辑器'], ['image', '图像'], ['markdown', 'Markdown'], ['export', '导出'], ['appearance', '外观'], ['general', '通用']];
 const defaults = { general: { language: 'zh-CN' }, editor: { fontSize: 14, useCustomFontSize: false, lineHeight: 1.9, contentWidth: 800 }, appearance: { theme: 'vue.css', darkTheme: 'night.css', useSeparateDarkTheme: false, sidebar: true, statusbar: true, focus: false, typewriter: false, windowStyle: 'classic', zoomLevel: 0, zoomByMouse: false, readingSpeed: 382, wordCountDelimiter: 0, convertSmartOnRender: false, smartQuotes: false, smartDashes: false, remapUnicodePunctuation: false, indentFirstLine: false, visibleBr: true, preserveLineBreaks: true, spellCheck: false }, image: { uploader: 'picgo-app', picgoEndpoint: 'http://127.0.0.1:36677/upload', picgoPath: '', preferRelative: true, addDotSlash: true, escapeUrl: true, insertAction: 'none', copyFolder: '' }, export: { pandocPath: '' } };
@@ -37,6 +38,16 @@ export function installPreferences({ view, desktop, notify }) {
   dialog.querySelector('[data-section="export"]').innerHTML = '<h3>导出</h3><div class="preferences-group"><h4>Pandoc</h4><label class="preferences-field">可执行文件<input type="text" name="export.pandocPath" placeholder="自动查找已安装的 Pandoc"></label><button type="button" data-action="pick-pandoc">选择 Pandoc…</button><p class="preferences-hint">用于非 Markdown 导入及 Word 导出，HTML / PDF 导出使用内置功能。</p></div>';
   const imagePolicy = dialog.querySelector('[data-section="image"] .preferences-group');
   imagePolicy.innerHTML = '<h4>插入图片时…</h4><label class="preferences-field">默认行为<select name="image.insertAction"><option value="none">无特殊操作</option><option value="copy">复制图片到文件夹</option><option value="upload">上传图片</option></select></label><label class="preferences-field">复制到<input type="text" name="image.copyFolder" placeholder="文档名.assets"></label><button type="button" data-action="pick-image-folder">选择文件夹…</button><p class="preferences-hint">只处理新插入的本地图片。文档 YAML 策略优先于此默认设置；失败时保留原图片。</p>';
+  const updateGroup = document.createElement('div'); updateGroup.className = 'preferences-group';
+  updateGroup.innerHTML = `<h4>软件更新</h4><p>当前版本：${version}</p><button type="button" data-action="check-updates">检查更新…</button><p class="preferences-hint">从 GitHub Releases 检测新版本，选择下载后在浏览器中获取对应系统的软件包。</p>`;
+  const updateButton = updateGroup.querySelector('button');
+  updateButton.onclick = async () => {
+    if (!desktop?.checkForUpdates) return;
+    updateButton.disabled = true; updateButton.textContent = '正在检查更新…';
+    try { await desktop.checkForUpdates(); }
+    finally { updateButton.disabled = false; updateButton.textContent = '检查更新…'; }
+  };
+  dialog.querySelector('[data-section="general"]').append(updateGroup);
   document.body.append(dialog);
   const tabs = dialog.querySelector('.preferences-tabs');
   for (const [id, label] of categories) {

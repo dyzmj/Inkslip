@@ -87,7 +87,7 @@ export function installWorkbench({ view, actions, desktop }) {
   const fileMenu = document.createElement('section'); fileMenu.id = 'file-menu'; fileMenu.hidden = true;
   fileMenu.setAttribute('aria-label', '文件菜单'); fileMenu.innerHTML = '<nav id="file-menu-nav" aria-label="文件操作"></nav><div id="file-menu-content"></div>';
   document.body.append(fileMenu);
-  const fileNavigation = [['back', '‹'], ['new', '新建'], ['open-panel', '打开'], ['save', '保存'], ['save-as', '另存为'], ['export-panel', '导出'], ['print', '打印'], ['themes-panel', '主题'], ['preferences', '偏好设置'], ['about', '关于墨简'], ['close', '关闭']];
+  const fileNavigation = [['back', '‹'], ['new', '新建'], ['open-panel', '打开'], ['save', '保存'], ['save-as', '另存为'], ['export-panel', '导出'], ['print', '打印'], ['themes-panel', '主题'], ['preferences', '偏好设置'], ['check-updates', '检查更新…'], ['about', '关于墨简'], ['close', '关闭']];
   for (const [id, label] of fileNavigation) {
     const button = document.createElement('button'); button.textContent = label; button.dataset.command = id;
     if (id === 'back') { button.className = 'file-menu-back'; button.setAttribute('aria-label', '返回编辑器'); button.innerHTML = '<span aria-hidden="true">←</span><span class="menu-back-default">菜单</span><span class="menu-back-hover">返回</span>'; }
@@ -897,6 +897,11 @@ export function installWorkbench({ view, actions, desktop }) {
           finally { uploadPending = false; uploadOverlay.hidden = true; context.target?.classList.remove('md-image-uploading'); }
         }
         case 'about': return await ask(`关于墨简 · Inkslip ${version}`, []);
+        case 'check-updates': {
+          if (!desktop?.checkForUpdates) return;
+          actions.notify('正在检查更新…');
+          await desktop.checkForUpdates(); return;
+        }
         case 'help': case 'markdown-reference': {
           const result = await desktop?.openExample();
           if (result?.content !== undefined) actions.loadDocument(result);
