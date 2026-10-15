@@ -1185,7 +1185,7 @@
   },
   "关于墨简": {
     "en": "About Inkslip",
-    "zh-TW": "關于墨簡"
+    "zh-TW": "關於墨簡"
   },
   "关闭偏好设置": {
     "en": "Close preferences",
@@ -1862,10 +1862,6 @@
   "未命名.md": {
     "en": "Untitled.md",
     "zh-TW": "未命名.md"
-  },
-  "未找到 Pandoc。请安装 Pandoc，或在偏好设置中指定 pandoc.exe 路径。": {
-    "en": "Pandoc was not found. Install it or specify the pandoc.exe path in Preferences.",
-    "zh-TW": "未找到 Pandoc。請安裝 Pandoc，或在偏好設置中指定 pandoc.exe 路徑。"
   },
   "未转换图片语法：请检查图片原文，带尺寸或样式的 HTML 图片需保留 HTML 语法。": {
     "en": "Image syntax was not converted. Check the source; HTML images with size or style attributes must retain HTML syntax.",
@@ -2606,5 +2602,37 @@
   "墨简 {0}：修正段间距、鼠标选字与可见行移动；补齐提示块和引用定义显示；文件栏底部新增文件夹菜单、新建、搜索、刷新、排序、视图切换及最近位置管理。": {
     "en": "Inkslip {0}: improved paragraph spacing, text selection and visual-line navigation; added alerts and reference definitions; expanded sidebar folder, search, sort, view and recent-location actions.",
     "zh-TW": "墨簡 {0}：修正段間距、鼠標選字與可見行移動；補齊提示塊和引用定義顯示；文件欄底部新增文件夾菜單、新建、搜索、刷新、排序、視圖切換及最近位置管理。"
+  },
+  "请选择 PicGo 应用的完整路径。": {
+    "en": "Select the full path to the PicGo application.",
+    "zh-TW": "請選擇 PicGo 應用程式的完整路徑。"
+  },
+  "请选择 PicGo-Core 可执行文件的完整路径。": {
+    "en": "Select the full path to the PicGo-Core executable.",
+    "zh-TW": "請選擇 PicGo-Core 執行檔的完整路徑。"
+  },
+  "服务": {
+    "en": "Services",
+    "zh-TW": "服務"
+  },
+  "隐藏墨简": {
+    "en": "Hide Inkslip",
+    "zh-TW": "隱藏墨簡"
+  },
+  "隐藏其他应用": {
+    "en": "Hide Other Apps",
+    "zh-TW": "隱藏其他應用程式"
+  },
+  "显示全部": {
+    "en": "Show All",
+    "zh-TW": "顯示全部"
+  },
+  "退出墨简": {
+    "en": "Quit Inkslip",
+    "zh-TW": "結束墨簡"
+  },
+  "未找到 Pandoc。请安装 Pandoc，或在偏好设置中指定其可执行文件路径。": {
+    "en": "Pandoc was not found. Install it or choose its executable in Preferences.",
+    "zh-TW": "未找到 Pandoc。請安裝 Pandoc，或在偏好設定中指定其執行檔路徑。"
   }
 }

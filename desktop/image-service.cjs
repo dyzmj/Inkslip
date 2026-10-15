@@ -136,11 +136,11 @@ async function requestUpload(endpoint, file, timeoutMs) {
   return uploadedUrl(result.result[0]);
 }
 async function launchPicgo(executable) {
-  if (!path.isAbsolute(executable) || !/\.exe$/i.test(executable)) throw Error('请选择 PicGo 应用的完整 .exe 路径。');
+  if (!path.isAbsolute(executable) || !(process.platform === 'darwin' ? /\.app$/i : /\.exe$/i).test(executable)) throw Error('请选择 PicGo 应用的完整路径。');
   await fs.access(executable);
   await new Promise((resolve, reject) => {
     const env = { ...process.env }; delete env.ELECTRON_RUN_AS_NODE;
-    const child = spawn(executable, [], { env, detached: true, stdio: 'ignore', windowsHide: true, shell: false });
+    const child = spawn(process.platform === 'darwin' ? '/usr/bin/open' : executable, process.platform === 'darwin' ? ['-a', executable] : [], { env, detached: true, stdio: 'ignore', windowsHide: true, shell: false });
     child.once('error', reject); child.once('spawn', () => { child.unref(); resolve(); });
   });
 }
@@ -149,7 +149,7 @@ async function uploadImage({ source, documentPath, preferences, timeoutMs = 6000
   const prepared = await prepareImage(source, documentPath, timeoutMs);
   try {
     if (config.uploader === 'picgo-cli') {
-      if (!path.isAbsolute(config.picgoPath) || !/\.(exe|[cm]?js)$/i.test(config.picgoPath)) throw Error('请选择 PicGo-Core 的完整 .exe 或 .js 路径。');
+      if (!path.isAbsolute(config.picgoPath) || (process.platform === 'win32' && !/\.(exe|[cm]?js)$/i.test(config.picgoPath))) throw Error('请选择 PicGo-Core 可执行文件的完整路径。');
       const js = /\.[cm]?js$/i.test(config.picgoPath);
       const env = { ...process.env }; if (js) env.ELECTRON_RUN_AS_NODE = '1'; else delete env.ELECTRON_RUN_AS_NODE;
       const { stdout } = await executeFile(js ? process.execPath : config.picgoPath, [...(js ? [config.picgoPath] : []), 'upload', prepared.file], { env, shell: false, windowsHide: true, timeout: timeoutMs, maxBuffer: 1024 * 1024 });

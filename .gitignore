@@ -14,6 +14,8 @@ node_modules/
 /tests/
 /scripts/*
 !/scripts/generate-icon.mjs
+!/scripts/package.mjs
+!/scripts/publish-packages.mjs
 *.test.*
 *.spec.*
 *-test.json

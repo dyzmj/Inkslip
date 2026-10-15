@@ -25,6 +25,7 @@ function runPandoc(executable, args, { cwd, input, timeout = 60000 } = {}) {
 async function findPandoc({ configuredPath } = {}) {
   const candidates = configuredPath ? [configuredPath] : [
     'pandoc',
+    ...(process.platform === 'darwin' ? ['/opt/homebrew/bin/pandoc', '/usr/local/bin/pandoc'] : []),
     process.env.LOCALAPPDATA && path.join(process.env.LOCALAPPDATA, 'Pandoc', 'pandoc.exe'),
     process.env.ProgramFiles && path.join(process.env.ProgramFiles, 'Pandoc', 'pandoc.exe'),
   ].filter(Boolean);
@@ -34,7 +35,7 @@ async function findPandoc({ configuredPath } = {}) {
       if (/^pandoc(?:\.exe)?\s+\d/im.test(output)) return executable;
     } catch { /* Try the next installed location. */ }
   }
-  throw new Error('未找到 Pandoc。请安装 Pandoc，或在偏好设置中指定 pandoc.exe 路径。');
+  throw new Error('未找到 Pandoc。请安装 Pandoc，或在偏好设置中指定其可执行文件路径。');
 }
 
 async function importDocument(inputPath, outputPath, { pandocPath } = {}) {

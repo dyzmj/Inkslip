@@ -50,8 +50,11 @@ const getSpellService = () => spellService ||= createSpellService(path.join(app.
 async function getPreferences() {
   const config = await imageService.loadPreferences(preferencesFile());
   if (!config.image.picgoPath) {
-    for (const executable of [path.join(app.getPath('appData'), '../Local/Programs/PicGo/PicGo.exe'), 'C:\\software\\PicGo\\PicGo.exe', 'D:\\Software\\PicGo\\PicGo.exe']) {
-      if (await fs.stat(executable).then(stat => stat.isFile(), () => false)) { config.image.picgoPath = executable; break; }
+    const candidates = process.platform === 'darwin'
+      ? ['/Applications/PicGo.app', path.join(app.getPath('home'), 'Applications/PicGo.app')]
+      : [path.join(app.getPath('appData'), '../Local/Programs/PicGo/PicGo.exe'), 'C:\\software\\PicGo\\PicGo.exe', 'D:\\Software\\PicGo\\PicGo.exe'];
+    for (const executable of candidates) {
+      if (await fs.access(executable).then(() => true, () => false)) { config.image.picgoPath = executable; break; }
     }
   }
   return config;
@@ -351,7 +354,7 @@ ipcMain.handle('desktop:spelling-learn', async (event, word) => {
   if (!trustedSender(event)) throw Error('拼写请求无效'); await (await getSpellService()).learn(word); return { status: 'ok' };
 });
 ipcMain.handle('desktop:pandoc-pick', event => fileOperation(event, async () => {
-  const result = await localizedDialog.showOpenDialog(window, { title: '选择 Pandoc', properties: ['openFile'], filters: [{ name: 'Pandoc', extensions: ['exe'] }] });
+  const result = await localizedDialog.showOpenDialog(window, { title: '选择 Pandoc', properties: ['openFile'], ...(process.platform === 'win32' ? { filters: [{ name: 'Pandoc', extensions: ['exe'] }] } : {}) });
   return result.canceled ? { status: 'cancelled' } : { status: 'ok', path: result.filePaths[0] };
 }));
 ipcMain.handle('desktop:image-folder', (event, request = {}) => fileOperation(event, async () => {
@@ -397,6 +400,10 @@ ipcMain.handle('desktop:convert-document', (event, request) => fileOperation(eve
 }));
 async function showProperties(file) {
   await fs.access(file);
+  if (process.platform === 'darwin') {
+    await executeFile('osascript', ['-e', 'on run argv\n tell application "Finder" to open information window of (POSIX file (item 1 of argv) as alias)\nend run', file], { timeout: 15000 });
+    return { status: 'ok', path: file };
+  }
   // PowerShell cannot read scripts inside app.asar; materialize the bundled helper for this invocation.
   const helperDirectory = await fs.mkdtemp(path.join(app.getPath('temp'), 'inkslip-properties-'));
   try {
@@ -542,7 +549,7 @@ ipcMain.handle('desktop:preferences-set', (event, input) => {
 ipcMain.handle('desktop:picgo-pick', (event, kind) => fileOperation(event, async () => {
   const result = await localizedDialog.showOpenDialog(window, {
     title: kind === 'picgo-cli' ? '选择 PicGo-Core' : '选择 PicGo 应用', properties: ['openFile'],
-    filters: [{ name: 'PicGo', extensions: kind === 'picgo-cli' ? ['exe', 'js', 'cjs', 'mjs'] : ['exe'] }]
+    ...(process.platform === 'win32' ? { filters: [{ name: 'PicGo', extensions: kind === 'picgo-cli' ? ['exe', 'js', 'cjs', 'mjs'] : ['exe'] }] } : {}),
   });
   return result.canceled ? null : result.filePaths[0];
 }));
@@ -710,18 +717,25 @@ function nativeMenuItems(items) {
   return items.map(item => item.type === 'separator' ? { type: 'separator' } : {
     label: item.context?.path ? item.label : t(item.label),
     enabled: item.enabled !== false,
-    ...(item.shortcut ? { accelerator: item.shortcut.replace(/Arrow/g, ''), registerAccelerator: false } : {}),
+    ...(item.shortcut ? { accelerator: item.shortcut.replace(/Arrow/g, '').replace(/^Ctrl\+/, 'CommandOrControl+'), registerAccelerator: false } : {}),
     ...(item.items ? { submenu: nativeMenuItems(item.items) } : { click: () => window?.webContents.send('desktop:command', item.id, item.context) }),
   });
 }
 
 function refreshNativeMenu() {
-  Menu.setApplicationMenu(Menu.buildFromTemplate(menuSpec.map(group => ({ label: t(group.label), submenu: group.label === '主题' && availableThemes.length ? [
+  const appMenu = { label: 'Inkslip', submenu: [
+    { role: 'about', label: t('关于墨简') }, { type: 'separator' },
+    { label: t('偏好设置'), accelerator: 'Command+,', click: () => window?.webContents.send('desktop:command', 'preferences') },
+    { type: 'separator' }, { role: 'services', label: t('服务') }, { type: 'separator' },
+    { role: 'hide', label: t('隐藏墨简') }, { role: 'hideOthers', label: t('隐藏其他应用') }, { role: 'unhide', label: t('显示全部') },
+    { type: 'separator' }, { role: 'quit', label: t('退出墨简') },
+  ] };
+  Menu.setApplicationMenu(Menu.buildFromTemplate([...(process.platform === 'darwin' ? [appMenu] : []), ...menuSpec.map(group => ({ label: t(group.label), submenu: group.label === '主题' && availableThemes.length ? [
     ...availableThemes.map(theme => ({ label: theme.name, type: 'radio', checked: selectedTheme === theme.id, click: () => window?.webContents.send('desktop:command', 'theme-select', { theme: theme.id }) })),
     { type: 'separator' }, { label: t('打开主题文件夹'), click: () => window?.webContents.send('desktop:command', 'theme-folder') },
     { label: t('重新加载主题'), click: () => window?.webContents.send('desktop:command', 'theme-reload') },
-  ] : nativeMenuItems(group.items) }))));
-  if (windowStyle === 'unibody' && window) window.removeMenu();
+  ] : nativeMenuItems(group.items) }))]));
+  if (process.platform !== 'darwin' && windowStyle === 'unibody' && window) window.removeMenu();
 }
 
 async function createWindow() {
@@ -735,7 +749,7 @@ async function createWindow() {
     minWidth: 780,
     minHeight: 560,
     title: t('墨简'),
-    icon: path.join(__dirname, '../assets/inkslip.ico'),
+    icon: path.join(__dirname, process.platform === 'win32' ? '../assets/inkslip.ico' : '../assets/inkslip.png'),
     frame: windowStyle === 'classic',
     autoHideMenuBar: true,
     backgroundColor: '#f6f4f0',
@@ -746,8 +760,10 @@ async function createWindow() {
       nodeIntegration: false,
     },
   });
-  window.setMenuBarVisibility(false);
-  if (windowStyle === 'unibody') window.removeMenu();
+  if (process.platform !== 'darwin') {
+    window.setMenuBarVisibility(false);
+    if (windowStyle === 'unibody') window.removeMenu();
+  }
   window.webContents.on('did-finish-load', () => {
     window.webContents.setZoomLevel(preferences.appearance.zoomLevel || 0);
     window.webContents.send('desktop:window-style', windowStyle);

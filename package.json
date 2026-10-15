@@ -1,6 +1,6 @@
 {
   "name": "inkslip",
-  "version": "0.7.8",
+  "version": "0.8.0",
   "private": true,
   "description": "A desktop Markdown editor for focused writing",
   "type": "module",
@@ -9,7 +9,9 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "start": "npm run build && electron .",
-    "package": "npm run build && electron-packager . Inkslip --platform=win32 --arch=x64 --out=release/0.7.8 --overwrite --icon=assets/inkslip.ico \"--ignore=^/(evidence|docs|tests|scripts|release|src)(/|$)\" \"--ignore=^/(README.md|README.zh-CN.md|vite.config.js|index.html|package-lock.json)$\""
+    "package": "npm run build && node scripts/package.mjs",
+    "package:win": "npm run package -- --platform=win32 --arch=x64",
+    "package:mac": "npm run package -- --platform=darwin"
   },
   "dependencies": {
     "@codemirror/commands": "6.11.1",
@@ -45,5 +47,13 @@
     "playwright-core": "1.64.0",
     "vite": "8.3.4"
   },
-  "productName": "Inkslip"
+  "productName": "Inkslip",
+  "author": "dyzmj",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dyzmj/Inkslip.git"
+  },
+  "engines": {
+    "node": ">=24"
+  }
 }

@@ -1,6 +1,7 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('desktop', Object.freeze({
+  platform: process.platform,
   newDocument: () => ipcRenderer.invoke('desktop:new'),
   convertDocument: request => ipcRenderer.invoke('desktop:convert-document', request),
   pickPandoc: () => ipcRenderer.invoke('desktop:pandoc-pick'),

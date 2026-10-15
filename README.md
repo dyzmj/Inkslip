@@ -2,7 +2,7 @@
 
 English | [简体中文](README.zh-CN.md)
 
-Inkslip is a Windows desktop Markdown editor for notes, documentation, and longer drafts. Editing and live preview share one writing surface: write Markdown, see the formatting appear, and click a rendered paragraph to continue editing its source.
+Inkslip is a Windows and macOS desktop Markdown editor for notes, documentation, and longer drafts. Editing and live preview share one writing surface: write Markdown, see the formatting appear, and click a rendered paragraph to continue editing its source.
 
 Your documents stay on your computer as plain Markdown files. Organize them with a file tree and outline, paste images, upload them through PicGo, and choose your own theme and typography. Switch to source mode whenever you need precise control over the syntax; both views share the same document and undo history.
 
@@ -24,15 +24,17 @@ The file sidebar footer aligns with the editor status bar. File tree and file li
 
 ## Run the desktop app
 
-The current version is **0.7.8** for Windows x64. Launch:
+The current version is **0.8.0** for Windows x64, Mac Intel (x64), and Mac Apple Silicon (arm64). Launch:
 
 ```text
-release/0.7.8/Inkslip-win32-x64/Inkslip.exe
+release/0.8.0/Inkslip-win32-x64/Inkslip.exe
 ```
+
+Download the ZIP for your platform from [Releases](https://github.com/dyzmj/Inkslip/releases), then extract it. On macOS, move `Inkslip.app` to Applications.
 
 Keep the entire application directory together; the EXE is not a standalone file. Save your documents and close the previous version before launching an update.
 
-Preferences, recent files, the user dictionary, themes, and pasted images for unsaved documents live in the application data directory, usually `%APPDATA%\Inkslip`. Upgrades copy legacy application data without overwriting existing new settings or deleting the original data and documents.
+Preferences, recent files, the user dictionary, themes, and pasted images for unsaved documents live in the application data directory, usually `%APPDATA%\Inkslip` on Windows or `~/Library/Application Support/Inkslip` on macOS. Upgrades copy legacy application data without overwriting existing new settings or deleting the original data and documents.
 
 ## Common actions
 
@@ -49,7 +51,7 @@ Preferences, recent files, the user dictionary, themes, and pasted images for un
 | Show / Hide Sidebar | Ctrl+Shift+L |
 | Focus mode | F8 |
 
-Classic windows use the top menu bar. Unibody windows start with the menu collapsed: use the top-left menu button for file navigation, or Alt+F and F10 to access menus. The sidebar has File and Outline tabs; sidebar visibility and source-mode controls sit in the bottom status bar.
+On macOS, use Command instead of Ctrl for the listed shortcuts. Classic windows use the top menu bar. Unibody windows start with the menu collapsed: use the top-left menu button for file navigation, or Alt+F and F10 to access menus. The sidebar has File and Outline tabs; sidebar visibility and source-mode controls sit in the bottom status bar.
 
 ## Images and PicGo
 
@@ -60,7 +62,7 @@ Press Ctrl+V to insert screenshots, images copied from a browser, or image files
 ### Configure uploads
 
 1. Configure your image host in PicGo and enable PicGo-Server.
-2. Open **File → Preferences → Image**, select **PicGo (app)**, and choose PicGo.exe. The default upload endpoint is `http://127.0.0.1:36677/upload`.
+2. Open **File → Preferences → Image**, select **PicGo (app)**, and choose `PicGo.exe` (Windows) or `/Applications/PicGo.app` (macOS). The default upload endpoint is `http://127.0.0.1:36677/upload`.
 3. Use the upload verification control to upload a test image.
 4. Right-click an image and choose **Upload Image**, or use the image menu to upload local images in the document.
 
@@ -95,13 +97,13 @@ Preferences include Classic/Unibody windows, automatic/custom font size, line he
 
 ## Import and export
 
-HTML, PDF, and printing work out of the box. Word export and document import require **Pandoc**; its `pandoc.exe` path can also be set in Preferences.
+HTML, PDF, and printing work out of the box. Word export and document import require **Pandoc**; its executable path can also be set in Preferences.
 
 Import converts documents into Markdown and extracts local media resources. The editor is temporarily locked during conversion. Word export supports tables and resolvable image resources. Mermaid diagrams remain code text in exported documents; check complex math fonts and pagination in the resulting output.
 
 ## Run from source
 
-You need Windows, Node.js, and npm. The project has been verified with **Node.js 24.20.0**.
+You need Windows or macOS, Node.js 24 or newer, and npm. The project has been verified with **Node.js 24.20.0**.
 
 ```powershell
 npm ci
@@ -130,19 +132,44 @@ npm start
 | `shared/` | Menu specifications, interface translations, and shared image-path logic |
 | `assets/` | Application logo, independently drawn SVG icons, and built-in CSS presets |
 | `examples/` | Markdown examples |
-| `scripts/generate-icon.mjs` | Generate application PNG and ICO files from the SVG logo |
+| `scripts/` | Build desktop bundles, generate ZIPs, publish Packages, and generate application icons |
+| `.github/workflows/release.yml` | Build Windows and Mac packages and publish versioned releases |
 
 ```powershell
 # Build the frontend
 npm run build
 
-# Build and package the Windows desktop application
+# Package for the current operating system and CPU, including a ZIP and SHA-256 checksum
 npm run package
+
+# Windows x64 (run on Windows)
+npm run package:win
+
+# Mac Apple Silicon / Intel (run on macOS)
+npm run package:mac -- --arch=arm64
+npm run package:mac -- --arch=x64
 ```
 
 Build output is written to `dist/`; packaged applications are written to `release/`. These directories are excluded from Git. Local tests, investigation scripts, generated development notes, logs, screenshots, and the entire `evidence/` directory are also excluded and are not required to build or run a checkout.
 
 The application uses an [M-centered logo](assets/inkslip.svg), with a shared [ICO](assets/inkslip.ico) for the window and EXE. Run `node scripts/generate-icon.mjs` to regenerate PNG and ICO assets; this also requires Python and Pillow.
+
+## Automated releases
+
+Every push to `main` and every pull request builds and launch-checks three packages on native GitHub runners: Windows x64, macOS x64, and macOS arm64. Download their ZIPs and checksums from the workflow's Artifacts section. Local packaging also ends with a ZIP under `release/<version>/`.
+
+To publish a version, update `package.json` and `package-lock.json`, commit, then push a matching version tag:
+
+```bash
+git tag v0.8.0
+git push origin v0.8.0
+```
+
+The workflow waits for all three builds and desktop checks to pass, publishes the platform ZIPs as GitHub npm Packages, and creates a GitHub Release with the ZIPs and `SHA256SUMS.txt`. It uses the repository's built-in `GITHUB_TOKEN` with `contents: write` and `packages: write`; no npm.org token is required. The workflow can also be run manually, with publishing enabled if desired.
+
+Release filenames are `Inkslip-<version>-windows-x64.zip`, `Inkslip-<version>-macos-x64.zip`, and `Inkslip-<version>-macos-arm64.zip`. Packages are `@dyzmj/inkslip-win32-x64`, `@dyzmj/inkslip-darwin-x64`, and `@dyzmj/inkslip-darwin-arm64`, each containing its ZIP and checksum. GitHub Packages may require GitHub authentication to download; Release assets provide direct downloads.
+
+macOS ZIPs preserve application permissions and symbolic links and use an ad-hoc signature. They are not Apple Developer ID signed or notarized, so macOS may require explicit approval in Privacy & Security. Windows builds are also unsigned. These builds are distributed outside app stores.
 
 ## Current scope
 

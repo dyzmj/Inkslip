@@ -2,7 +2,7 @@
 
 [English](README.md) | 简体中文
 
-墨简是一款适用于 Windows 的 Markdown 桌面编辑器，适合记录笔记、编写文档和长文写作。编辑与实时预览融入同一个写作区域：写下 Markdown，格式随文字呈现；点击已排版的段落，即可继续修改原文。
+墨简是一款适用于 Windows 和 macOS 的 Markdown 桌面编辑器，适合记录笔记、编写文档和长文写作。编辑与实时预览融入同一个写作区域：写下 Markdown，格式随文字呈现；点击已排版的段落，即可继续修改原文。
 
 文档以普通 Markdown 文件保存在你的电脑上。你可以通过文件树和大纲整理内容，粘贴图片、使用 PicGo 上传图片，并选择适合自己的主题与排版。需要精确调整语法时，随时切换源码模式，正文和撤销历史始终保持一致。
 
@@ -24,15 +24,17 @@
 
 ## 运行桌面版
 
-当前版本为 **0.7.8**，支持 Windows x64。双击：
+当前版本为 **0.8.0**，支持 Windows x64、Mac Intel（x64）和 Mac Apple Silicon（arm64）。双击：
 
 ```text
-release/0.7.8/Inkslip-win32-x64/Inkslip.exe
+release/0.8.0/Inkslip-win32-x64/Inkslip.exe
 ```
+
+从 [Releases](https://github.com/dyzmj/Inkslip/releases) 下载对应平台的 ZIP 并解压；macOS 将 `Inkslip.app` 放入“应用程序”。
 
 保留整个程序目录，不能只复制 EXE。更新前保存并关闭旧版，然后启动新版。
 
-偏好设置、最近文件、用户词典、主题和未保存文档的粘贴图片存放在应用数据目录，通常为 `%APPDATA%\Inkslip`。升级时会复制旧版已有的应用数据；已有的新配置不会被覆盖，原目录及文档保留。
+偏好设置、最近文件、用户词典、主题和未保存文档的粘贴图片存放在应用数据目录，Windows 通常为 `%APPDATA%\Inkslip`，macOS 为 `~/Library/Application Support/Inkslip`。升级时会复制旧版已有的应用数据；已有的新配置不会被覆盖，原目录及文档保留。
 
 ## 常用操作
 
@@ -49,7 +51,7 @@ release/0.7.8/Inkslip-win32-x64/Inkslip.exe
 | 显示／隐藏侧栏 | Ctrl+Shift+L |
 | 专注模式 | F8 |
 
-经典窗口通过顶部菜单操作；一体化窗口的菜单默认收起，点击左上角菜单图标打开文件导航，Alt+F 或 F10 可访问菜单。侧栏只包含“文件”和“大纲”，侧栏与源码切换按钮位于底部状态栏。
+macOS 使用 Command 替代上表快捷键中的 Ctrl。经典窗口通过顶部菜单操作；一体化窗口的菜单默认收起，点击左上角菜单图标打开文件导航，Alt+F 或 F10 可访问菜单。侧栏只包含“文件”和“大纲”，侧栏与源码切换按钮位于底部状态栏。
 
 ## 图片与 PicGo
 
@@ -60,7 +62,7 @@ Ctrl+V 可以插入截图、浏览器复制的图片和资源管理器复制的�
 ### 配置上传
 
 1. 在 PicGo 中配置图床，启用 PicGo-Server。
-2. 打开“文件 → 偏好设置 → 图像”，选择 **PicGo (app)** 并指定 PicGo.exe。默认上传地址为 `http://127.0.0.1:36677/upload`。
+2. 打开“文件 → 偏好设置 → 图像”，选择 **PicGo (app)** 并指定 `PicGo.exe`（Windows）或 `/Applications/PicGo.app`（macOS）。默认上传地址为 `http://127.0.0.1:36677/upload`。
 3. 使用“验证图片上传选项”上传一张测试图片。
 4. 右键图片选择“上传图片”，或在图像菜单上传文档中的本地图片。
 
@@ -97,13 +99,13 @@ inkslip-copy-images-to: ./assets
 
 ## 导入与导出
 
-HTML、PDF 和打印可以直接使用。Word 导出及文档导入需要安装 **Pandoc**，也可在偏好设置中指定 `pandoc.exe`。
+HTML、PDF 和打印可以直接使用。Word 导出及文档导入需要安装 **Pandoc**，也可在偏好设置中指定 Pandoc 可执行文件路径。
 
 导入会转换为 Markdown，并提取本地媒体资源；导入期间暂时锁定编辑区。Word 导出支持表格及可解析的图片资源。Mermaid 在文档导出中保留代码文本，复杂公式字体和分页效果需自行检查。
 
 ## 从源码运行
 
-需要 Windows、Node.js 和 npm。本项目使用 **Node.js 24.20.0** 验证。
+需要 Windows 或 macOS、Node.js 24 及以上版本和 npm。本项目使用 **Node.js 24.20.0** 验证。
 
 ```powershell
 npm ci
@@ -132,19 +134,44 @@ npm start
 | `shared/` | 菜单规格、界面翻译及共享图片路径逻辑 |
 | `assets/` | 应用 Logo、独立绘制的 SVG 图标和内置 CSS 主题 |
 | `examples/` | Markdown 示例 |
-| `scripts/generate-icon.mjs` | 从 SVG Logo 生成应用 PNG 和 ICO |
+| `scripts/` | 构建桌面应用、生成 ZIP、发布 Packages 和生成应用图标 |
+| `.github/workflows/release.yml` | 自动构建 Windows 与 Mac 包并发布版本 |
 
 ```powershell
 # 构建前端
 npm run build
 
-# 构建并打包 Windows 桌面应用
+# 按当前系统和 CPU 打包，生成 ZIP 及 SHA-256 校验文件
 npm run package
+
+# Windows x64（在 Windows 执行）
+npm run package:win
+
+# Mac Apple Silicon / Intel（在 macOS 执行）
+npm run package:mac -- --arch=arm64
+npm run package:mac -- --arch=x64
 ```
 
 前端产物位于 `dist/`，桌面包位于 `release/`，均不提交 Git。测试、研究脚本、自动生成的开发说明、日志、截图以及整个 `evidence/` 目录也仅保留在本地；从仓库构建和运行无需这些文件。
 
 应用使用以字母 M 为中心的 [Logo](assets/inkslip.svg)，窗口和 EXE 共用 [ICO](assets/inkslip.ico)。`node scripts/generate-icon.mjs` 可重新生成 PNG 和 ICO，另需 Python 和 Pillow。
+
+## 自动构建与发布
+
+每次推送到 `main` 或创建 Pull Request，GitHub Actions 都会在对应系统上构建并启动检查 Windows x64、macOS x64 和 macOS arm64 三个版本。ZIP 和校验文件可在工作流的 Artifacts 中下载。本地打包同样会在 `release/<版本>/` 生成 ZIP。
+
+发布版本时，同步修改 `package.json` 和 `package-lock.json` 中的版本号并提交，再推送相同版本的标签：
+
+```bash
+git tag v0.8.0
+git push origin v0.8.0
+```
+
+三个平台的构建和桌面检查全部成功后，工作流自动将平台 ZIP 封装为 GitHub npm Packages，并创建包含三个 ZIP 和 `SHA256SUMS.txt` 的 GitHub Release。使用仓库内置的 `GITHUB_TOKEN`，授予 `contents: write` 与 `packages: write`，无需 npm.org Token。也可以手动运行工作流并选择是否发布。
+
+Release 文件分别为 `Inkslip-<版本>-windows-x64.zip`、`Inkslip-<版本>-macos-x64.zip` 和 `Inkslip-<版本>-macos-arm64.zip`。Packages 分别为 `@dyzmj/inkslip-win32-x64`、`@dyzmj/inkslip-darwin-x64` 和 `@dyzmj/inkslip-darwin-arm64`，各包含 ZIP 和校验文件。GitHub Packages 下载可能需要登录认证；Release 附件可直接下载。
+
+macOS ZIP 保留应用权限与符号链接，使用临时签名（ad-hoc），尚未使用 Apple Developer ID 签名和公证，因此 macOS 可能要求在“隐私与安全性”中手动批准。Windows 包也未进行代码签名。当前通过应用商店以外的渠道分发。
 
 ## 当前范围
 

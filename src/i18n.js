@@ -3,7 +3,10 @@ import localization from '../shared/i18n.cjs';
 const { languages, resolveLanguage, translate } = localization;
 let language = 'zh-CN';
 export { languages };
-export const t = text => translate(text, language);
+export const t = text => {
+  const translated = translate(text, language);
+  return globalThis.window?.desktop?.platform === 'darwin' ? translated.replaceAll('Ctrl+', '⌘') : translated;
+};
 
 // Localize app chrome only. Document text and user-controlled names never enter
 // the catalog lookup, even when a filename or heading equals a UI label.
